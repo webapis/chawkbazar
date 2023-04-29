@@ -4,13 +4,14 @@ import MegaMenu from "@components/ui/mega-menu";
 import classNames from "classnames";
 import ListMenu from "@components/ui/list-menu";
 import { useTranslation } from "next-i18next";
-
+import { useRouter } from 'next/router'
 interface MenuProps {
 	data: any;
 	className?: string;
 }
 
 const HeaderMenu: React.FC<MenuProps> = ({ data, className }) => {
+	const {locale} = useRouter()
 	const { t } = useTranslation("menu");
 	return (
 		<nav className={classNames(`headerMenu flex w-full relative`, className)}>
@@ -22,7 +23,7 @@ const HeaderMenu: React.FC<MenuProps> = ({ data, className }) => {
 					key={item.id}
 				>
 					<Link
-						href={item.path}
+						href={item.path[locale]?item.path[locale]:item.path }
 						className="relative inline-flex items-center px-3 py-2 text-sm font-normal xl:text-base text-heading xl:px-4 group-hover:text-black"
 					>
 						{t(item.label)}

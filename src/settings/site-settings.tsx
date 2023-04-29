@@ -2,6 +2,7 @@ import { ILFlag } from '@components/icons/ILFlag';
 import { SAFlag } from '@components/icons/SAFlag';
 import { CNFlag } from '@components/icons/CNFlag';
 import { USFlag } from '@components/icons/USFlag';
+import {TRFlag} from '@components/icons/TRFlag';
 import { DEFlag } from '@components/icons/DEFlag';
 import { ESFlag } from '@components/icons/ESFlag';
 import Nike from 'public/assets/images/brands/megamenu/nike.png';
@@ -101,7 +102,7 @@ export const siteSettings = {
       },
       {
         id: 2,
-        path: '/search?q=men-wear',
+        path: {en:'/search?q=men-wear',tr:'/search?q=erkek-giyim'},
         label: 'menu-men-wear',
         columns: [
           {
@@ -109,12 +110,12 @@ export const siteSettings = {
             columnItems: [
               {
                 id: 1,
-                path: '/search?q=top-wear',
+                path:{en:'/search?q=men-top-wear',tr:'/search?q=erkek-üst-giyim'},
                 label: 'menu-top-wear',
                 columnItemItems: [
                   {
                     id: 1,
-                    path: '/search?q=t-shit-shirtrt',
+                    path:{en: '/search?q=men-t-shirts',tr:'/search?q=erkek-tişört'} ,
                     label: 'menu-t-shirt',
                   },
                   {
@@ -1122,18 +1123,18 @@ export const siteSettings = {
       },
     ],
     languageMenu: [
-      {
-        id: 'ar',
-        name: 'عربى - AR',
-        value: 'ar',
-        icon: <SAFlag width="20px" height="15px" />,
-      },
-      {
-        id: 'zh',
-        name: '中国人 - ZH',
-        value: 'zh',
-        icon: <CNFlag width="20px" height="15px" />,
-      },
+      // {
+      //   id: 'ar',
+      //   name: 'عربى - AR',
+      //   value: 'ar',
+      //   icon: <SAFlag width="20px" height="15px" />,
+      // },
+      // {
+      //   id: 'zh',
+      //   name: '中国人 - ZH',
+      //   value: 'zh',
+      //   icon: <CNFlag width="20px" height="15px" />,
+      // },
       {
         id: 'en',
         name: 'English - EN',
@@ -1141,23 +1142,29 @@ export const siteSettings = {
         icon: <USFlag width="20px" height="15px" />,
       },
       {
+        id: 'tr',
+        name: 'Türkçe - TR',
+        value: 'tr',
+        icon: <TRFlag width="20px" height="15px" />,
+      },
+      {
         id: 'de',
         name: 'Deutsch - DE',
         value: 'de',
         icon: <DEFlag width="20px" height="15px" />,
       },
-      {
-        id: 'he',
-        name: 'rעברית - HE',
-        value: 'he',
-        icon: <ILFlag width="20px" height="15px" />,
-      },
-      {
-        id: 'es',
-        name: 'Español - ES',
-        value: 'es',
-        icon: <ESFlag width="20px" height="15px" />,
-      },
+      // {
+      //   id: 'he',
+      //   name: 'rעברית - HE',
+      //   value: 'he',
+      //   icon: <ILFlag width="20px" height="15px" />,
+      // },
+      // {
+      //   id: 'es',
+      //   name: 'Español - ES',
+      //   value: 'es',
+      //   icon: <ESFlag width="20px" height="15px" />,
+      // },
     ],
     categoryMenu: [
       {

@@ -8,24 +8,33 @@ type PaginatedProduct = {
 	paginatorInfo: any;
 };
 const fetchProducts = async ({ queryKey }: any) => {
+
 	const [_key, _params] = queryKey;
-	const { data } = await http.get(API_ENDPOINTS.PRODUCTS);
+	console.log('_params', _params)
+	console.log('_key', _key)
+	const { data } = await http.get(_key + _params);
+
+
+	debugger
+
 	return {
-		data: shuffle(data),
+		data: shuffle(data.data),
 		paginatorInfo: {
 			nextPageUrl: "",
 		},
 	};
-};
+}
 
 const useProductsQuery = (options: QueryOptionsType) => {
+
+	debugger
 	return useInfiniteQuery<PaginatedProduct, Error>(
 		[API_ENDPOINTS.PRODUCTS, options],
 		fetchProducts,
 		{
 			getNextPageParam: ({ paginatorInfo }) => paginatorInfo.nextPageUrl,
 		}
-	);
-};
+	)
+}
 
 export { useProductsQuery, fetchProducts };

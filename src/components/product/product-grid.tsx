@@ -11,6 +11,7 @@ interface ProductGridProps {
 }
 export const ProductGrid: FC<ProductGridProps> = ({ className = "" }) => {
 	const { query } = useRouter();
+
 	const {
 		isFetching: isLoading,
 		isFetchingNextPage: loadingMore,
@@ -22,7 +23,8 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = "" }) => {
 	if (error) return <p>{error.message}</p>;
 
 	const { t } = useTranslation("common");
-
+debugger
+console.log('data---',data)
 	return (
 		<>
 			<div

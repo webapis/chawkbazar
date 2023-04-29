@@ -64,6 +64,7 @@ export default function Home() {
 Home.Layout = Layout;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+	debugger
 	return {
 		props: {
 			...(await serverSideTranslations(locale!, [

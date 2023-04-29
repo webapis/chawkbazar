@@ -11,4 +11,8 @@ module.exports = withPWA({
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  images: {
+    domains: ['xint.com.tr','www.alinderi.com.tr','static.ticimax.cloud'],
+  },
 });

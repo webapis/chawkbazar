@@ -18,6 +18,7 @@ type DivElementRef = React.MutableRefObject<HTMLDivElement>;
 const { site_header } = siteSettings;
 const Header: React.FC = () => {
   const { openSearch, openModal, setModalView, isAuthorized } = useUI();
+
   const { t } = useTranslation('common');
   const siteHeaderRef = useRef() as DivElementRef;
   addActiveScroll(siteHeaderRef);

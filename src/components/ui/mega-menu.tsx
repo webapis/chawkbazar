@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "@components/ui/link";
 import { useTranslation } from "next-i18next";
-
+import { useRouter } from 'next/router'
 interface MenuItem {
 	id: number | string;
 	path: string;
@@ -16,6 +16,7 @@ type MegaMenuProps = {
 };
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
+	const {locale} = useRouter()
 	const { t } = useTranslation("menu");
 	return (
 		<div className="absolute bg-gray-200 megaMenu shadow-header -start-28 xl:start-0">
@@ -29,7 +30,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
 							<React.Fragment key={columnItem.id}>
 								<li className="mb-1.5">
 									<Link
-										href={columnItem.path}
+										href={columnItem.path[locale]?columnItem.path[locale]:columnItem.path }
 										className="block text-sm py-1.5 text-heading font-semibold px-5 xl:px-8 2xl:px-10 hover:text-heading hover:bg-gray-300"
 									>
 										{t(columnItem.label)}
@@ -45,7 +46,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
 										}
 									>
 										<Link
-											href={item.path}
+											href={item.path[locale]?item.path[locale]:item.path }
 											className="text-body text-sm block py-1.5 px-5 xl:px-8 2xl:px-10 hover:text-heading hover:bg-gray-300"
 										>
 											{t(item.label)}
