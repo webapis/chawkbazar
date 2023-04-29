@@ -12,7 +12,8 @@ const fetchProducts = async ({ queryKey }: any) => {
 	const [_key, _params] = queryKey;
 	console.log('_params', _params)
 	console.log('_key', _key)
-	const { data } = await http.get(_key + _params);
+
+	const { data } = await http.get(_key +'?q='+ _params.q);
 
 
 	debugger

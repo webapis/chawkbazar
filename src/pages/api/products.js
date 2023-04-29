@@ -1,18 +1,36 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import prisma from './../../../lib/prisma.js';
 import placeholder from './placeholders.json'
+
+const queries={
+  'erkek-tişört':{
+    where:{
+      gender:'_erkek',
+      title: {
+        contains: 'tişört',
+      },
+    }
+  }
+}
 export default async function handler(req, res) {
+  console.log('req.url',decodeURI( req.url))
+  const q = queries[req.query.q]
   debugger
   if (req.method === 'GET') {
     try {
       const data = await prisma.products.findMany({
         skip: 0,
-        take: 50
+        take: 100,
+        ...q
       });
 
       const mappedData = data.map((m, i) => {
-        const imageSource = placeholder[m.marka].imageHost.trim() + m.imageUrl
-        debugger
+  const      imageSource =
+        placeholder[m.marka].imagePrefix.trim() +
+        placeholder[m.marka].imageHost.trim() +
+        m.imageUrl +
+        placeholder[m.marka].imgPostFix;
+    
         return {
           name: m.title,
           image: {

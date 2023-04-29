@@ -13,6 +13,6 @@ module.exports = withPWA({
   },
 
   images: {
-    domains: ['xint.com.tr','www.alinderi.com.tr','static.ticimax.cloud'],
+    domains: ['xint.com.tr','www.alinderi.com.tr','static.ticimax.cloud','ik.imagekit.io'],
   },
 });
