@@ -3,6 +3,8 @@ import { BrandFilter } from "./brand-filter";
 import { FilteredItem } from "./filtered-item";
 import { ColorFilter } from "./color-filter";
 import { PriceFilter } from "./price-filter";
+import {UrunFilter} from './urunler'
+import {GenderFilter} from './gender'
 import { useRouter } from "next/router";
 import isEmpty from "lodash/isEmpty";
 import { useTranslation } from "next-i18next";
@@ -44,7 +46,8 @@ export const ShopFilters: React.FC = () => {
 							))}
 				</div>
 			</div>
-
+			<GenderFilter />
+			<UrunFilter />
 			<CategoryFilter />
 			<BrandFilter />
 			<PriceFilter />

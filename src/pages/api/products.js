@@ -10,12 +10,20 @@ const queries={
         contains: 'tişört',
       },
     }
+  },
+  'erkek-üst-giyim':{
+    where: {
+      gender:'_erkek',
+      title: {
+        search: 'gömlek|bluz|crop|atlet|sweatshirt|kazak|hırka|tulum|kimono|süveter',
+      },
+    },
   }
 }
 export default async function handler(req, res) {
   console.log('req.url',decodeURI( req.url))
   const q = queries[req.query.q]
-  debugger
+
   if (req.method === 'GET') {
     try {
       const data = await prisma.products.findMany({
@@ -147,7 +155,7 @@ export default async function handler(req, res) {
           ]
         }
       })
-      debugger
+
       return res.status(200).json({ data: mappedData });
     } catch (err) {
       console.error(err);

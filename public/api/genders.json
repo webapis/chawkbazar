@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Kadın",
+      "slug": "kadın",
+      "productCount": 20,
+      "icon": "/assets/images/category/icons/woman.png",
+      "tags": ["shovia", "fusion", "elegance", "fashadil", "blaze"],
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/woman.jpg",
+        "original": "/assets/images/category/woman.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Erkek",
+      "slug": "erkek",
+      "productCount": 20,
+      "icon": "/assets/images/category/icons/man.png",
+      "tags": ["shovia", "fusion", "elegance", "blaze"],
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/man.jpg",
+        "original": "/assets/images/category/man.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Kız çocuk",
+      "slug": "kız-çocuk",
+      "productCount": 20,
+      "icon": "/assets/images/category/icons/watch.png",
+      "tags": ["fusion", "elegance", "blaze"],
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/watch.jpg",
+        "original": "/assets/images/category/watch.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Erkek Çocuk",
+      "slug": "erkek-çocuk",
+      "productCount": 20,
+      "icon": "/assets/images/category/icons/kids.png",
+      "tags": ["shovia", "fusion", "elegance", "fashadil", "blaze"],
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/category/kid.jpg",
+        "original": "/assets/images/category/kid.jpg"
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
     },
     {
       "id": 2,
-      "name": "Man",
-      "slug": "man",
+      "name": "Erkek",
+      "slug": "erkek",
       "productCount": 20,
       "icon": "/assets/images/category/icons/man.png",
       "tags": ["shovia", "fusion", "elegance", "blaze"],

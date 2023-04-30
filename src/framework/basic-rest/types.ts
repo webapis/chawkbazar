@@ -14,6 +14,14 @@ export type CategoriesQueryOptionsType = {
   limit?: number;
   demoVariant?: 'ancient';
 };
+
+export type GendersQueryOptionsType = {
+  text?: string;
+  gender?: string;
+  status?: string;
+  // limit?: number;
+  // demoVariant?: 'ancient';
+};
 export type ProductsQueryOptionsType = {
   type: string;
   text?: string;
@@ -54,6 +62,17 @@ export type Category = {
   icon?: string;
   products?: Product[];
   productCount?: number;
+};
+
+export type Gender = {
+  id: number | string;
+  name: string;
+  slug: string;
+  // details?: string;
+  // image?: Attachment;
+  // icon?: string;
+  // genders?: Gender[];
+  // genderCount?: number;
 };
 export type Collection = {
   id: number | string;

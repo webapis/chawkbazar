@@ -3,6 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
+   previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
 
 datasource db {
@@ -21,6 +22,7 @@ model Products {
   timestamp String?
   marka     String?
   gender    String?
+  @@fulltext([title])
 }
 
 model Users {
