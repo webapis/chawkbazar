@@ -33,7 +33,7 @@ export const AltKategoriFilter = ({ altKategoriTitle }) => {
 	React.useEffect(() => {
 
 		setCategories(selectedCategories)
-		console.log('selectedCategories', selectedCategories)
+	
 
 	}, [query?.k]);
 	if (isLoading) return <p>Loading...</p>;
@@ -62,14 +62,14 @@ export const AltKategoriFilter = ({ altKategoriTitle }) => {
 		);
 	}
 	const items = data?.altkategoriler.data;
-	if (items?.filter(f => f.groupname === altKategoriTitle).filter(item => selectedCategories.some(s => item.kategoriler.find(d => d === s)))?.length) {
+	if (items?.filter(f => f.groupname === altKategoriTitle).filter(item => categories.some(s => item.kategoriler.find(d => d === s)))?.length) {
 		return (
 			<div className="block border-b border-gray-300 pb-7 mb-7">
 				<h3 className="text-heading text-sm md:text-base font-semibold mb-7">
 					{t(altKategoriTitle)}
 				</h3>
 				<div className="mt-2 flex flex-col space-y-4">
-					{items?.filter(f => f.groupname === altKategoriTitle).filter(item => selectedCategories.some(s => item.kategoriler.find(d => d === s))).map((item: any) => (
+					{items?.filter(f => f.groupname === altKategoriTitle).filter(item => categories.some(s => item.kategoriler.find(d => d === s))).map((item: any) => (
 						<CheckBox
 							key={item.id}
 							label={item.name}
