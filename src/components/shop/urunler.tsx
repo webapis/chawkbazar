@@ -1,4 +1,4 @@
-import { useCategoriesQuery } from "@framework/category/get-all-categories";
+import { useKategorilerQuery } from "@framework/kategori/get-all-kategori";
 import { CheckBox } from "@components/ui/checkbox";
 import { useRouter } from "next/router";
 import React from "react";
@@ -8,11 +8,11 @@ export const UrunFilter = () => {
 	const { t } = useTranslation("common");
 	const router = useRouter();
 	const { pathname, query } = router;
-	const { data, isLoading } = useCategoriesQuery({
+	const { data, isLoading } = useKategorilerQuery({
 		limit: 10,
 	});
-	const selectedCategories = query?.f
-		? (query.f as string).split(",")
+	const selectedCategories = query?.k
+		? (query.k as string).split(",")
 		: [];
 	const [formState, setFormState] = React.useState<string[]>(
 		selectedCategories
@@ -20,7 +20,7 @@ export const UrunFilter = () => {
 
 	React.useEffect(() => {
 		setFormState(selectedCategories);
-	}, [query?.f]);
+	}, [query?.k]);
 
 	if (isLoading) return <p>Loading...</p>;
 
@@ -29,14 +29,14 @@ export const UrunFilter = () => {
 		let currentFormState = formState.includes(value)
 			? formState.filter((i) => i !== value)
 			: [...formState, value];
-		const { f, ...restQuery } = query;
+		const { k, ...restQuery } = query;
 
 		let nextRouteState =	{
 			pathname,
 			query: {
 				...restQuery,q:undefined,
 				...(!!currentFormState.length
-					? { f: currentFormState.join(",") }
+					? { k: currentFormState.join(",") }
 					: {}),
 			},
 		}
@@ -47,11 +47,11 @@ export const UrunFilter = () => {
 			{ scroll: false }
 		);
 	}
-	const items = data?.categories.data;
+	const items = data?.kategoriler.data;
 	return (
 		<div className="block border-b border-gray-300 pb-7 mb-7">
 			<h3 className="text-heading text-sm md:text-base font-semibold mb-7">
-				{t("text-product")}
+				{t("text-category")}
 			</h3>
 			<div className="mt-2 flex flex-col space-y-4">
 				{items?.map((item: any) => (

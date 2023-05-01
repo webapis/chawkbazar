@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "id":0,
+            "groupname": "Boyu",
+            "name": "uzun",
+            "slug": "uzun",
+            "kategoriler":["elbise"]
+        },
+        {
+            "id":1,
+            "groupname": "Boyu",
+            "name": "kısa",
+            "slug": "kısa",
+            "kategoriler":["elbise"]
+        },
+        {
+            "id":2,
+            "groupname": "Boyu",
+            "name": "midi",
+            "slug": "midi",
+            "kategoriler":["elbise"]
+        },
+        {
+            "id":3,
+            "groupname": "Boyu",
+            "name": "maxi",
+            "slug": "maxi",
+            "kategoriler":["elbise"]
+        },
+        {
+            "id":4,
+            "groupname": "Alt Kategori",
+            "name": "outdoor",
+            "slug": "outdoor",
+            "kategoriler":["pantolon"]
+        },
+        {
+            "id":5,
+            "groupname": "Alt Kategori",
+            "name": "okul çanta",
+            "slug": "okul çanta",
+            "kategoriler":["çanta"]
+        },
+        {
+            "id":6,
+            "groupname": "Yaka Tipi",
+            "name": "v yaka",
+            "slug": "v yaka",
+            "kategoriler":["tişört"]
+        },
+        {
+            "id":7,
+            "groupname": "Yaka Tipi",
+            "name": "outdoor",
+            "slug": "outdoor",
+            "kategoriler":["tişört"]
+        }
+    ]
+}

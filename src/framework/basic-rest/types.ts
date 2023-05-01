@@ -14,7 +14,20 @@ export type CategoriesQueryOptionsType = {
   limit?: number;
   demoVariant?: 'ancient';
 };
-
+export type KategorilerQueryOptionsType = {
+  text?: string;
+  kategiri?: string;
+  status?: string;
+  limit?: number;
+  demoVariant?: 'ancient';
+};
+export type AltKategorilerQueryOptionsType = {
+  text?: string;
+  altkategori?: string;
+  status?: string;
+  limit?: number;
+  demoVariant?: 'ancient';
+};
 export type GendersQueryOptionsType = {
   text?: string;
   gender?: string;
@@ -63,7 +76,24 @@ export type Category = {
   products?: Product[];
   productCount?: number;
 };
-
+export type Kategori = {
+  id: number | string;
+  name: string;
+  slug: string;
+  details?: string;
+  image?: Attachment;
+  icon?: string;
+  kategoriler?: Kategori[];
+  productCount?: number;
+};
+export type AltKategori = {
+  id: number | string;
+  groupname: string;
+  name: string;
+  slug: string;
+  kategoriler:string[];
+  altkategoriler?: AltKategori[];
+};
 export type Gender = {
   id: number | string;
   name: string;

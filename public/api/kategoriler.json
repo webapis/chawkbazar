@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Elbise",
+      "slug": "elbise",
+      "productCount": 20
+
+    },
+    {
+      "id": 2,
+      "name": "Pantolon",
+      "slug": "pantolon",
+      "productCount": 20
+
+    },
+    {
+      "id": 3,
+      "name": "Etek",
+      "slug": "etek",
+      "productCount": 20
+
+    },
+    {
+      "id": 4,
+      "name": "Gömlek",
+      "slug": "gömlek",
+      "productCount": 20
+
+    },
+    {
+      "id": 5,
+      "name": "Mont",
+      "slug": "mont",
+      "productCount": 20
+
+    },
+    {
+      "id": 6,
+      "name": "Gözlük",
+      "slug": "gözlük",
+      "productCount": 20
+
+    },
+    {
+      "id": 7,
+      "name": "Çanta",
+      "slug": "çanta",
+      "productCount": 20
+    },
+    {
+      "id": 8,
+      "name": "Ayakkabı",
+      "slug": "ayakkabı",
+      "productCount": 20
+    }
+  ]
+}

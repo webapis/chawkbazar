@@ -5,6 +5,7 @@ import { ColorFilter } from "./color-filter";
 import { PriceFilter } from "./price-filter";
 import {UrunFilter} from './urunler'
 import {GenderFilter} from './gender'
+import {AltKategoriFilter} from './altkategori-filter'
 import { useRouter } from "next/router";
 import isEmpty from "lodash/isEmpty";
 import { useTranslation } from "next-i18next";
@@ -48,7 +49,9 @@ export const ShopFilters: React.FC = () => {
 			</div>
 			<GenderFilter />
 			<UrunFilter />
-			<CategoryFilter />
+			<AltKategoriFilter altKategoriTitle="Alt Kategori"/>
+			<AltKategoriFilter altKategoriTitle="Boyu"/>
+			{/* <CategoryFilter /> */}
 			<BrandFilter />
 			<PriceFilter />
 			<ColorFilter />

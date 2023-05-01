@@ -12,6 +12,8 @@ export const API_ENDPOINTS = {
   BRANDS_ANCIENT: '/brands_ancient.json',
   PRODUCTS: '/products',
   GENDERS: '/genders.json',
+  KATEGORILER: '/kategoriler.json',
+  ALTKATEGORILER: '/subcategories.json',
   PRODUCTS_2: '/products_2.json',
   PRODUCTS_ANCIENT: '/products_ancient.json',
   FEATURED_PRODUCTS: '/featured_products.json',
