@@ -10,10 +10,10 @@ type PaginatedProduct = {
 const fetchProducts = async ({ queryKey }: any) => {
 
 	const [_key, _params] = queryKey;
-	console.log('_params', _params)
-	console.log('_key', _key)
-
-	const { data } = await http.get(_key +'?q='+ _params.q);
+	// console.log('_params', Object.entries( _params).filter(f=>f[0] !=='limit').map(m=> m[0]+'='+m[1]).join('&') )
+	// console.log('_key', _key)
+	const url =Object.entries( _params).filter(f=>f[0] !=='limit').map(m=> m[0]+'='+m[1]).join('&')
+	const { data } = await http.get(_key +'?'+url);
 
 
 	debugger

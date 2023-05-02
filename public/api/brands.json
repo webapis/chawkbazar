@@ -2,8 +2,8 @@
   "brands": [
     {
       "id": 1,
-      "name": "Shovia",
-      "slug": "shovia",
+      "name": "Defacto",
+      "slug": "defacto",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/shovia.png",
@@ -12,8 +12,8 @@
     },
     {
       "id": 2,
-      "name": "Fusion",
-      "slug": "fusion",
+      "name": "Koton",
+      "slug": "koton",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/fusion.png",

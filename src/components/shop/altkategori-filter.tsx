@@ -9,11 +9,11 @@ export const AltKategoriFilter = ({ altKategoriTitle }) => {
 	const router = useRouter();
 	const { pathname, query } = router;
 	console.log('query.k', query.k)
-	debugger
+	
 	const { data, isLoading } = useAltKategorilerQuery({
 
 	});
-	debugger
+
 	const selectedSubCategories = query?.a
 		? (query.a as string).split(",")
 		: [];

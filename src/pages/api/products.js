@@ -2,18 +2,18 @@
 import prisma from './../../../lib/prisma.js';
 import placeholder from './placeholders.json'
 
-const queries={
-  'erkek-tişört':{
-    where:{
-      gender:'_erkek',
+const queries = {
+  'erkek-tişört': {
+    where: {
+      gender: '_erkek',
       title: {
         contains: 'tişört',
       },
     }
   },
-  'erkek-üst-giyim':{
+  'erkek-üst-giyim': {
     where: {
-      gender:'_erkek',
+      gender: '_erkek',
       title: {
         search: 'gömlek|bluz|crop|atlet|sweatshirt|kazak|hırka|tulum|kimono|süveter',
       },
@@ -21,24 +21,54 @@ const queries={
   }
 }
 export default async function handler(req, res) {
-  console.log('req.url',decodeURI( req.url))
+
   const q = queries[req.query.q]
+  console.log('brand', req.query)
+  let newquery = { where: {} }
+  for (let query in req.query) {
+
+    console.log('query value', req.query[query])
+    if(query==='brand'){
+     newquery.where.marka ={in:req.query[query].split(',')}
+    }
+    else if(query==='g'){
+      console.log()
+      newquery.where.OR=req.query[query].split(',').map(m=>{return {gender:{contains:m.replace(/ı/g,"i").replace("kiz-cocuk","_kcocuk").replace("erkek-çocuk","_ecocuk") }}}) 
+
+    } else if (query==='color'){
+      newquery.where.title= {
+        search: req.query[query].split(',').join('|'),
+      }
+
+    }
+    else if(query==='k'){
+      
+    }
+  }
+  debugger
+console.log('newquery',newquery)
+
 
   if (req.method === 'GET') {
     try {
       const data = await prisma.products.findMany({
+        orderBy: [
+          {
+            index: 'asc',
+          }
+        ],
         skip: 0,
         take: 100,
-        ...q
+       ...newquery
       });
-
+debugger
       const mappedData = data.map((m, i) => {
-  const      imageSource =
-        placeholder[m.marka].imagePrefix.trim() +
-        placeholder[m.marka].imageHost.trim() +
-        m.imageUrl +
-        placeholder[m.marka].imgPostFix;
-    
+        const imageSource =
+          placeholder[m.marka].imagePrefix.trim() +
+          placeholder[m.marka].imageHost.trim() +
+          m.imageUrl +
+          placeholder[m.marka].imgPostFix;
+
         return {
           name: m.title,
           image: {

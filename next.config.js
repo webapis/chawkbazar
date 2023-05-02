@@ -13,6 +13,14 @@ module.exports = withPWA({
   },
 
   images: {
-    domains: ['xint.com.tr','www.alinderi.com.tr','static.ticimax.cloud','ik.imagekit.io'],
+    domains: ['xint.com.tr',
+    'www.alinderi.com.tr',
+    'static.ticimax.cloud',
+    'ik.imagekit.io',
+    'static.zara.net',
+    'cdn.sorsware.com',
+    'lp2.hm.com',
+    'cdn3.sorsware.com',
+    'romancdn.sysrun.net','romancdn.sysrun.net'],
   },
 });
