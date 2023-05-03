@@ -12,15 +12,18 @@ datasource db {
 }
 
 model Products {
-  id        Int     @id @default(autoincrement())
-  title     String @db.VarChar(300)
-  index     Int
-  priceNew  String?
-  imageUrl  String @db.VarChar(300)
-  link      String?
-  timestamp String?
-  marka     String?
-  gender    String?
+  id          Int     @id @default(autoincrement())
+  title       String  @db.VarChar(300)
+  index       Int
+  priceNew    String?
+  imageUrl    String  @db.VarChar(300)
+  link        String?
+  timestamp   String?
+  marka       String?
+  gender      String?
+  renk        String
+  altKategori String
+  kategori    String
 
   @@fulltext([title])
 }

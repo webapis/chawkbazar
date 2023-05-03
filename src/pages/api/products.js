@@ -27,26 +27,40 @@ export default async function handler(req, res) {
   let newquery = { where: {} }
   for (let query in req.query) {
 
-    console.log('query value', req.query[query])
-    if(query==='brand'){
-     newquery.where.marka ={in:req.query[query].split(',')}
-    }
-    else if(query==='g'){
-      console.log()
-      newquery.where.OR=req.query[query].split(',').map(m=>{return {gender:{contains:m.replace(/ı/g,"i").replace("kiz-cocuk","_kcocuk").replace("erkek-çocuk","_ecocuk") }}}) 
 
-    } else if (query==='color'){
-      newquery.where.title= {
-        search: req.query[query].split(',').join('|'),
+    if (query === 'brand') {
+      newquery.where.marka = { in: req.query[query].split(',') }
+    }
+    else if (query === 'g') {
+
+      newquery.where.OR = req.query[query].split(',').map(m => { return { gender: { contains: m.replace(/ı/g, "i").replace("kiz-cocuk", "_kcocuk").replace("erkek-çocuk", "_ecocuk") } } })
+
+    } else if (query === 'color') {
+      newquery.where.renk = {
+        in: req.query[query].split(','),
       }
 
     }
-    else if(query==='k'){
-      
+    else if (query === 'k') {
+      debugger
+      console.log('kategori.in', req.query[query].split(','))
+      newquery.where.kategori = {
+        in: req.query[query].split(','),
+      }
+      debugger
     }
+    else if (query === 'a') {
+      debugger
+      console.log('altKategori.in', req.query[query].split(','))
+      newquery.where.altKategori = {
+        in: req.query[query].split(','),
+      }
+      debugger
+    }
+
   }
   debugger
-console.log('newquery',newquery)
+  console.log('newquery', newquery)
 
 
   if (req.method === 'GET') {
@@ -59,9 +73,9 @@ console.log('newquery',newquery)
         ],
         skip: 0,
         take: 100,
-       ...newquery
+        ...newquery
       });
-debugger
+      debugger
       const mappedData = data.map((m, i) => {
         const imageSource =
           placeholder[m.marka].imagePrefix.trim() +

@@ -2,14 +2,13 @@
 	"name": "chawkbazar",
 	"version": "2.1.6",
 	"private": true,
+
 	"scripts": {
 		"clean": "rimraf \"{.next,dist,build,out,node_modules}\"",
 		"dev": "next -p 3001",
 		"build": "next build",
-		"genKeywords": "node utils/generateKeywords.js",
 		"downloadData": "node utils/downloadData.js",
-		"mergefiles": "node utils/mergefiles.js",
-		"generateNavigation": "node utils/genNav/NavGenRunner.js",
+		"importData": "node utils/script.js",
 		"start": "next start"
 	},
 	"dependencies": {
