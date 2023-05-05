@@ -16,6 +16,7 @@ model Products {
   title       String  @db.VarChar(300)
   index       Int
   priceNew    String?
+  price       Decimal?
   imageUrl    String  @db.VarChar(300)
   link        String?
   timestamp   String?

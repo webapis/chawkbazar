@@ -1,14 +1,16 @@
 
 import { PrismaClient } from '@prisma/client'
-import { genegateNavigation } from './genegateNavigation.js'
+import { genegateNavigation } from './genegateNavigation.mjs'
+import mapPrice from './mapPrice.mjs'
 import fs from 'fs'
 import path from 'path'
-import walkSync from './walkSync.js'
-import orderData from './orderData.js'
+import walkSync from './walkSync.mjs'
+import orderData from './orderData.mjs'
+import { formatMoney, unformat } from 'accounting-js'
+const rzt = parseFloat('1399').toFixed(2)
 
-debugger
 const prisma = new PrismaClient()
-debugger
+
 
 let filePaths = []
 await prisma.products.deleteMany({})
@@ -27,32 +29,35 @@ walkSync(path.join(process.cwd(), `erkek-cocuk/unzipped-data`), async (filepath)
   filePaths.push(filepath)
 })
 
-debugger
 let list = []
 let sliceCounter = 0
 let isComplete = false
 let indexCounter = 0
 
 while (!isComplete) {
-  debugger
+
 
   for (let filepath of filePaths) {
 
     const raw = fs.readFileSync(filepath, { encoding: 'utf-8' })
-    const data = JSON.parse(raw).map(m => { return { ...m, timestamp: m.timestamp.toString() } }).slice(sliceCounter, sliceCounter + 20)
-
+    const data = JSON.parse(raw).map(m => { return { ...m, priceNew: m.priceNew? m.priceNew.toString():m.priceNew, timestamp: m.timestamp.toString(), price: m.priceNew ? mapPrice(m.priceNew.toString()) : 0 } }).slice(sliceCounter, sliceCounter + 20)
+    debugger
     list.push(...data)
+
+
 
   }
   if (list.length > 0) {
     console.log('list.length', list.length)
     //add kategori field
-    let listwithNav =[]
+    let listwithNav = []
     for (let l of list) {
 
       const navs = genegateNavigation({ title: l.title })
-    
-      listwithNav.push({...l,...navs})
+      // const ft = l.priceNew.replace('TL', '').replace('$', '').replaceAll('.','').replaceAll(',','').trim()
+      // const red =formatNumber(ft, {precision:1})
+      debugger
+      listwithNav.push({ ...l, ...navs })
     }
 
 
@@ -95,7 +100,7 @@ async function main({ data }) {
     console.error(error)
 
     await prisma.$disconnect()
- 
+
 
   }
 

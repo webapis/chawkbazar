@@ -23,7 +23,7 @@ const queries = {
 export default async function handler(req, res) {
 
   const q = queries[req.query.q]
-  console.log('brand', req.query)
+
   let newquery = { where: {} }
   for (let query in req.query) {
 
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     }
     else if (query === 'k') {
       debugger
-      console.log('kategori.in', req.query[query].split(','))
+
       newquery.where.kategori = {
         in: req.query[query].split(','),
       }
@@ -51,16 +51,21 @@ export default async function handler(req, res) {
     }
     else if (query === 'a') {
       debugger
-      console.log('altKategori.in', req.query[query].split(','))
+
       newquery.where.altKategori = {
         in: req.query[query].split(','),
       }
       debugger
     }
+    else if (query === 'price') {
+      const priceRange = req.query[query].split(',').map(m => { return { price: { gte: parseFloat(m.split('-')[0]), lte: parseFloat(m.split('-')[1]) } } })
+    newquery.where.OR = priceRange
+      console.log('', priceRange)
+    }
 
   }
   debugger
-  console.log('newquery', newquery)
+
 
 
   if (req.method === 'GET') {
@@ -118,7 +123,7 @@ export default async function handler(req, res) {
             }
           ],
           "price": 20.0,
-          "sale_price": 17.99,
+          "sale_price": parseFloat(m.price),
           "variations": [
             {
               "id": 1,

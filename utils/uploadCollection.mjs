@@ -8,7 +8,7 @@ import zlib from 'zlib';
 import fetch from 'node-fetch'
 import makeDir from 'make-dir'
 import path from 'path'
-import  walkSync  from './walkSync.js'
+import  walkSync  from './walkSync.mjs'
 async function uploadCollection({ fileName, data, gender, marka }) {
     const responsesha = await fetch(`https://api.github.com/repos/webapis/keyword-editor/contents/${gender}/${fileName}.json.gz`, { method: 'get', headers: { Accept: "application/vnd.github.v3+json", authorization: `token ${process.env.GH_TOKEN_2}`, "X-GitHub-Api-Version": "2022-11-28" } })
     

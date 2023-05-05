@@ -1,11 +1,10 @@
 
-import { productTitleMatch } from './productTitleMatch.js'
+import { productTitleMatch } from './productTitleMatch.mjs'
 import fs from 'fs'
-debugger
+
 const Rawallkeywords = fs.readFileSync(`${process.cwd()}/utils/keywords.json`, { encoding: 'utf-8' })
 const allkeywords=JSON.parse(Rawallkeywords)
 
-debugger
 function genegateNavigation({ title }) {
   const keywords = allkeywords
   const matchingKeywords = keywords.map((m) => {
