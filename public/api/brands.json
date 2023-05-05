@@ -22,8 +22,8 @@
     },
     {
       "id": 3,
-      "name": "Hunter Shoes",
-      "slug": "hunter-shoes",
+      "name": "Lcwaikiki",
+      "slug": "lcwaikiki",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/hunter-shoes.png",
@@ -32,8 +32,8 @@
     },
     {
       "id": 4,
-      "name": "Club Shoes",
-      "slug": "club-shoes",
+      "name": "Nike",
+      "slug": "nike",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/club-shoes.png",
@@ -42,8 +42,8 @@
     },
     {
       "id": 5,
-      "name": "Hoppister",
-      "slug": "hoppister",
+      "name": "Penti",
+      "slug": "penti",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/hoppister.png",
@@ -52,8 +52,8 @@
     },
     {
       "id": 6,
-      "name": "Blaze Fashion",
-      "slug": "blaze-fashion",
+      "name": "Tommylife",
+      "slug": "tommylife",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/blaze-fashion.png",
@@ -62,8 +62,8 @@
     },
     {
       "id": 7,
-      "name": "Elegance",
-      "slug": "elegance",
+      "name": "Tozlu",
+      "slug": "tozlu",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/elegance.png",
@@ -72,8 +72,623 @@
     },
     {
       "id": 8,
-      "name": "Fashadil",
-      "slug": "fashadil",
+      "name": "Uspoloassn",
+      "slug": "uspoloassn",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Blacknoble",
+      "slug": "blacknoble",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Beymenclub",
+      "slug": "beymenclub",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Dericeket",
+      "slug": "dericeket",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Alinderi",
+      "slug": "alinderi",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Beyyoglu",
+      "slug": "beyyoglu",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Colins",
+      "slug": "colins",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Dericlub",
+      "slug": "dericlub",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Deriderim",
+      "slug": "deriderim",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Derimod",
+      "slug": "derimod",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Deristore",
+      "slug": "deristore",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 19,
+      "name": "Desa",
+      "slug": "desa",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 20,
+      "name": "İkbalderi",
+      "slug": "ikbalderi",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 21,
+      "name": "Levis",
+      "slug": "levis",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 22,
+      "name": "Markapia",
+      "slug": "markapia",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 23,
+      "name": "Matras",
+      "slug": "matras",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 24,
+      "name": "Mavi jeans",
+      "slug": "mavijeans",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 25,
+      "name": "Network",
+      "slug": "network",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 26,
+      "name": "Patirti",
+      "slug": "patirti",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 27,
+      "name": "Pierrecardin",
+      "slug": "pierrecardin",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 28,
+      "name": "Sarar",
+      "slug": "sarar",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 29,
+      "name": "Tergan",
+      "slug": "tergan",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 30,
+      "name": "Vakko",
+      "slug": "vakko",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 31,
+      "name": "Wcollection",
+      "slug": "wcollection",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 32,
+      "name": "Wrangler",
+      "slug": "wrangler",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 33,
+      "name": "Xint",
+      "slug": "xint",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 34,
+      "name": "Zara",
+      "slug": "zara",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 35,
+      "name": "Nu",
+      "slug": "nu",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 36,
+      "name": "Avva",
+      "slug": "avva",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 37,
+      "name": "Centone",
+      "slug": "centone",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 38,
+      "name": "Kigili",
+      "slug": "kigili",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 39,
+      "name": "Slatra",
+      "slug": "slatra",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 40,
+      "name": "Valiberta",
+      "slug": "valiberta",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 41,
+      "name": "Addax",
+      "slug": "addax",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 42,
+      "name": "Abiyefon",
+      "slug": "abiyefon",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 43,
+      "name": "Adl",
+      "slug": "adl",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 44,
+      "name": "Baqa",
+      "slug": "baqa",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 45,
+      "name": "Bsl",
+      "slug": "bsl",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 46,
+      "name": "Dilvin",
+      "slug": "dilvin",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 47,
+      "name": "Exquise",
+      "slug": "exquise",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 48,
+      "name": "Gizia",
+      "slug": "gizia",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 49,
+      "name": "İpekyol",
+      "slug": "ipekyol",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 50,
+      "name": "Lacht",
+      "slug": "lacht",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 51,
+      "name": "Lovemybody",
+      "slug": "lovemybody",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 52,
+      "name": "Machka",
+      "slug": "machka",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 53,
+      "name": "Mango",
+      "slug": "mango",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 54,
+      "name": "Miostil",
+      "slug": "miostil",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 55,
+      "name": "Olegcassini",
+      "slug": "olegcassini",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }  ,
+    {
+      "id": 56,
+      "name": "Oxxo",
+      "slug": "oxxo",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 57,
+      "name": "Perspective",
+      "slug": "perspective",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 58,
+      "name": "Quzu",
+      "slug": "quzu",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 59,
+      "name": "Roman",
+      "slug": "roman",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 60,
+      "name": "Saygigiyim",
+      "slug": "saygigiyim",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 61,
+      "name": "Tiffanytomato",
+      "slug": "tiffanytomato",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 62,
+      "name": "twist",
+      "slug": "Twist",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 63,
+      "name": "Vitrin",
+      "slug": "vitrin",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }
+    ,
+    {
+      "id": 64,
+      "name": "Yargici",
+      "slug": "yargici",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fashadil.png",
+        "original": "/assets/images/brands/fashadil.png"
+      }
+    }    ,
+    {
+      "id": 65,
+      "name": "H&M",
+      "slug": "hm",
       "image": {
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
