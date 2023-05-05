@@ -4,6 +4,7 @@ import type { FC } from "react";
 import { useUI } from "@contexts/ui.context";
 import usePrice from "@framework/product/use-price";
 import { Product } from "@framework/types";
+import {formatMoney} from 'accounting-js'
 // import ProductIcon1 from '../../../public/assets/images/products/icons/product-icon1.svg'
 // import ProductIcon2 from '../../../public/assets/images/products/icons/product-icon2.svg'
 // import ProductIcon3 from '../../../public/assets/images/products/icons/product-icon3.svg'
@@ -61,7 +62,8 @@ const ProductCard: FC<ProductProps> = ({
   const { price, basePrice, discount } = usePrice({
     amount: product.sale_price ? product.sale_price : product.price,
     baseAmount: product.price,
-    currencyCode: "USD",
+    currencyCode: "TRY",
+  
   });
   function handlePopupView() {
     setModalData({ data: product });
@@ -70,7 +72,7 @@ const ProductCard: FC<ProductProps> = ({
   }
 
   return (
-    <div
+    <div style={{textTransform:'capitalize'}}
       className={cn(
         `group box-border overflow-hidden flex ${
           !disableBorderRadius && "rounded-md"
@@ -282,7 +284,7 @@ const ProductCard: FC<ProductProps> = ({
               demoVariant === "ancient" && "font-bold text-gray-900 text-lg"
             }`}
           >
-            {price}
+          {formatMoney(product.sale_price,{symbol : "₺ ",decimal : ".",thousand: ",",precision : 2})}
           </span>
           {discount && (
             <del

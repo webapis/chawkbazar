@@ -58,8 +58,8 @@ export default async function handler(req, res) {
       debugger
     }
     else if (query === 'price') {
-      const priceRange = req.query[query].split(',').map(m => { return { price: { gte: parseFloat(m.split('-')[0]), lte: parseFloat(m.split('-')[1]) } } })
-    newquery.where.OR = priceRange
+      const priceRange = req.query[query].split(',').map(m => { return { price: m.split('-')[1] ? { gte: parseFloat(m.split('-')[0]), lte: parseFloat(m.split('-')[1]) } : { gte: parseFloat(m.split('-')[0]) } } })
+      newquery.where.OR = priceRange
       console.log('', priceRange)
     }
 
@@ -89,14 +89,14 @@ export default async function handler(req, res) {
           placeholder[m.marka].imgPostFix;
 
         return {
-          name: m.title,
+          name:m.title.substr(m.title.indexOf(" ")).replace('_','| ') ,
           image: {
             "id": i,
             "thumbnail": imageSource,
             "original": imageSource
           },
           "id": i,
-          "description": "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+          "description": m.marka.toUpperCase(), // m.title.substr(0, m.title.lastIndexOf("_")).trim(),
           "slug": "armani-veni-vidi-vici",
           "isNewArrival": true,
 
