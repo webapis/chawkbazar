@@ -44,6 +44,56 @@ const colorFilterItems = [
 		name: "Gri",
 		slug: "gri",
 		hexColor: "#e1e1e1",
+
+	},
+	{
+		id: "8",
+		name: "Kırmızı",
+		slug: "kırmızı",
+		hexColor: "#ff0000",
+		
+	},
+	{
+		id: "9",
+		name: "Sarı",
+		slug: "sarı",
+		hexColor: "#FFFF00",
+		
+	},
+	{
+		id: "10",
+		name: "Yeşil",
+		slug: "yeşil",
+		hexColor: "#008000",
+		
+	},
+	{
+		id: "11",
+		name: "Pembe",
+		slug: "pembe",
+		hexColor: "#FFC0CB",
+		
+	},
+	{
+		id: "12",
+		name: "Fuşya",
+		slug: "fuşya",
+		hexColor: "#FF00FF",
+		
+	},
+	{
+		id: "13",
+		name: "Turuncu",
+		slug: "turuncu",
+		hexColor: "#ffa500",
+		
+	},
+	{
+		id: "14",
+		name: "Mor",
+		slug: "mor",
+		hexColor: "#a020f0",
+		
 	},
 ];
 export const ColorFilter = () => {

@@ -9,47 +9,187 @@
     },
     {
       "id": 2,
+      "name": "Tişört",
+      "slug": "tişört",
+      "productCount": 20
+
+    },
+    {
+      "id": 3,
+      "name": "Bluz",
+      "slug": "bluz",
+      "productCount": 20
+
+    },
+    {
+      "id": 4,
+      "name": "Abiye",
+      "slug": "abiye",
+      "productCount": 20
+
+    },
+    {
+      "id": 5,
+      "name": "Atlet",
+      "slug": "atlet",
+      "productCount": 20
+
+    },
+    {
+      "id": 6,
+      "name": "sweatshirt",
+      "slug": "sweatshirt",
+      "productCount": 20
+
+    },
+    {
+      "id": 7,
+      "name": "tunik",
+      "slug": "tunik",
+      "productCount": 20
+
+    },
+    {
+      "id": 8,
+      "name": "kazak",
+      "slug": "kazak",
+      "productCount": 20
+
+    },
+    {
+      "id": 9,
+      "name": "hırka",
+      "slug": "hırka",
+      "productCount": 20
+
+    },
+    {
+      "id": 10,
+      "name": "büstyer",
+      "slug": "büstyer",
+      "productCount": 20
+
+    },
+    {
+      "id": 11,
+      "name": "takım",
+      "slug": "takım",
+      "productCount": 20
+
+    },
+    {
+      "id": 12,
+      "name": "body",
+      "slug": "body",
+      "productCount": 20
+
+    },
+    {
+      "id": 13,
+      "name": "tulum",
+      "slug": "tulum",
+      "productCount": 20
+
+    },
+    {
+      "id": 14,
+      "name": "kimono",
+      "slug": "kimono",
+      "productCount": 20
+
+    },
+    {
+      "id": 15,
+      "name": "süveter",
+      "slug": "süveter",
+      "productCount": 20
+
+    },
+    {
+      "id": 16,
+      "name": "pareo",
+      "slug": "pareo",
+      "productCount": 20
+
+    },
+    {
+      "id": 17,
+      "name": "salopet",
+      "slug": "salopet",
+      "productCount": 20
+
+    },
+    {
+      "id": 18,
+      "name": "panço",
+      "slug": "panço",
+      "productCount": 20
+
+    },
+    {
+      "id": 19,
+      "name": "kaftan",
+      "slug": "kaftan",
+      "productCount": 20
+
+    },
+    {
+      "id": 20,
+      "name": "perelin",
+      "slug": "perelin",
+      "productCount": 20
+
+    },
+    {
+      "id": 21,
+      "name": "takım elbise",
+      "slug": "takım elbise",
+      "productCount": 20
+
+    },
+    {
+      "id": 22,
       "name": "Pantolon",
       "slug": "pantolon",
       "productCount": 20
 
     },
     {
-      "id": 3,
+      "id": 23,
       "name": "Etek",
       "slug": "etek",
       "productCount": 20
 
     },
     {
-      "id": 4,
+      "id": 24,
       "name": "Gömlek",
       "slug": "gömlek",
       "productCount": 20
 
     },
     {
-      "id": 5,
+      "id": 25,
       "name": "Mont",
       "slug": "mont",
       "productCount": 20
 
     },
     {
-      "id": 6,
+      "id": 26,
       "name": "Gözlük",
       "slug": "gözlük",
       "productCount": 20
 
     },
     {
-      "id": 7,
+      "id": 27,
       "name": "Çanta",
       "slug": "çanta",
       "productCount": 20
     },
     {
-      "id": 8,
+      "id": 28,
       "name": "Ayakkabı",
       "slug": "ayakkabı",
       "productCount": 20
