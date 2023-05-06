@@ -19,7 +19,10 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = "" }) => {
 		hasNextPage,
 		data,
 		error,
-	} = useProductsQuery({ limit: 10, ...query });
+	} = useProductsQuery({ ...query });
+
+
+
 	if (error) return <p>{error.message}</p>;
 
 	const { t } = useTranslation("common");

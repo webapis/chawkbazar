@@ -47,6 +47,7 @@ export type QueryOptionsType = {
   category?: string;
   status?: string;
   limit?: number;
+  start?:number;
   demoVariant?: 'ancient';
 };
 

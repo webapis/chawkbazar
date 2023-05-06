@@ -21,7 +21,9 @@ const queries = {
   }
 }
 export default async function handler(req, res) {
-
+  console.log('req.query..........', req.query)
+  const page = req.query.page
+  console.log('page.....>>>', page)
   const q = queries[req.query.q]
 
   let newquery = { where: {} }
@@ -76,7 +78,7 @@ export default async function handler(req, res) {
             index: 'asc',
           }
         ],
-        skip: 0,
+        skip: page === 1 ? 0 : 100 * page,
         take: 100,
         ...newquery
       });
@@ -89,7 +91,8 @@ export default async function handler(req, res) {
           placeholder[m.marka].imgPostFix;
 
         return {
-          name:m.title.substr(m.title.indexOf(" ")).replace('_','| ') ,
+          name: m.title.substr(m.title.indexOf(" ")).replace('_', '| '),
+    
           image: {
             "id": i,
             "thumbnail": imageSource,
