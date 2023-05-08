@@ -72,12 +72,14 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
+      debugger
       const aggregations = await prisma.products.aggregate({
         _count: {
           index: true,
         },
         ...newquery
       })
+      debugger
       const data = await prisma.products.findMany({
 
         orderBy: [
