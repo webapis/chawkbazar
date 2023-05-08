@@ -20,7 +20,7 @@ Tech specification for this template is given below
 - [React Query](https://react-query.tanstack.com/)
 - [Axios](https://axios-http.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
+-
 ## Getting Started & Installation
 
 For getting started with the template you have to follow the below procedure. First navigate to the `chawkbazar` directory.
