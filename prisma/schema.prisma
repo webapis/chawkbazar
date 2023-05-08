@@ -8,7 +8,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url = "mysql://23wyo2vmt07gbipmus8v:pscale_pw_Xc29WAYDBgNNlvQGlrVUCscSldEu0hqSWWmVrzRkT2p@aws.connect.psdb.cloud/gritdb?sslaccept=strict"
+  url = "mysql://root:159357@localhost:3306/products"
 }
 
 model Products {

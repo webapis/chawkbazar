@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       return
     }
   const page = req.query.page
-
+console.log('req.query',req.query)
   const q = queries[req.query.q]
 
   let newquery = { where: {} }
@@ -222,7 +222,7 @@ export default async function handler(req, res) {
           ]
         }
       })
-
+debugger
       return res.status(200).json({ data: mappedData, count: aggregations._count.index });
     } catch (err) {
       console.error(err);
