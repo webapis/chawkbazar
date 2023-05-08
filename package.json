@@ -6,6 +6,7 @@
 		"clean": "rimraf \"{.next,dist,build,out,node_modules}\"",
 		"dev": "next -p 3001",
 		"build": "next build",
+		"genKeywords": "node utils/generateKeywords.js",
 		"downloadData": "node utils/downloadData.mjs",
 		"importData": "node utils/script.mjs",
 		"start": "next start"

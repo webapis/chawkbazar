@@ -25,7 +25,7 @@ import { SunglassIcon } from '@components/icons/sunglass-icon';
 import { SneakerIcon } from '@components/icons/sneaker-icon';
 
 export const siteSettings = {
-  name: 'ChawkBazar',
+  name: 'Biraradamoda',
   description: 'Fastest E-commerce template built with React, NextJS, TypeScript, React-Query and Tailwind CSS.',
   author: {
     name: 'RedQ, Inc.',
@@ -34,13 +34,13 @@ export const siteSettings = {
   },
   logo: {
     url: '/assets/images/logo.svg',
-    alt: 'ChawkBazar',
+    alt: 'Biraradamoda',
     href: '/',
     width: 95,
     height: 30,
   },
-  defaultLanguage: 'en',
-  currencyCode: 'USD',
+  defaultLanguage: 'tr',
+  currencyCode: 'TRY',
   site_header: {
     menu: [
       {
@@ -101,6 +101,294 @@ export const siteSettings = {
         ],
       },
       {
+        id: 3,
+        path: '/search?q=kadın-giyim',
+        label: 'menu-women-wear',
+        columns: [
+          {
+            id: 1,
+            columnItems: [
+              {
+                id: 1,
+                path: '/search?q=kadın-üst-giyim',
+                label: 'menu-top-wear',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: {en:'/search?q=woman-dress',tr:'/search?q=kadın-elbise-abiye'},
+                    label: 'menu-woman-dresses-abiye',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=kadın-tişört-atlet-büstiyer',
+                    label: 'menu-t-shirt-athlete-bustier',
+                  },
+                  {
+                    id: 3,
+                    path: '/search?q=kadın-gömlek-bluz-tunik',
+                    label: 'menu-shirt-bluz-tunic',
+                  },
+                  {
+                    id: 4,
+                    path: '/search?q=kadın-sweatshirt',
+                    label: 'menu-sweatshirts',
+                  },
+        
+                  {
+                    id: 5,
+                    path: '/search?q=kadın-kazak-hırka-süveter',
+                    label: 'menu-jumper-cardigan-sweater',
+                  },
+                
+      
+                  {
+                    id: 6,
+                    path: '/search?q=kadın-salopet-tulum',
+                    label: 'menu-tulum-salopet',
+                  },
+                  {
+                    id: 7,
+                    path: '/search?q=kadın-kafta-perelin-panço',
+                    label: 'menu-perelin-pancho-kafta',
+                  },
+                ],
+              },
+              {
+                id: 2,
+                path: '/search?q=kadın-mücevherler',
+                label: 'menu-jewellers',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=kadın-yüzük-küpe',
+                    label: 'menu-ring-earring',
+                  }
+                ],
+              },
+              {
+                id: 3,
+                path: '/search?q=kadın-çanta-cüzdan',
+                label: 'menu-bags-wallets',
+              }
+            ],
+          },
+          {
+            id: 2,
+            columnItems: [
+              {
+                id: 1,
+                path: '/search?q=kadın-alt-giyim',
+                label: 'menu-bottom-wear',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=kadın-pantolon',
+                    label: 'menu-trousers',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=kadın-etek-pareo',
+                    label: 'menu-skirt-pareo',
+                  },
+                  {
+                    id: 3,
+                    path: '/search?q=kadın-şort',
+                    label: 'menu-short-bermuda',
+                  },
+                  {
+                    id: 4,
+                    path: '/search?q=kadın-tayt',
+                    label: 'menu-leggings',
+                  },
+                  {
+                    id: 5,
+                    path: '/search?q=kadın-eşofman',
+                    label: 'menu-tracksuit',
+                  },
+                  {
+                    id: 6,
+                    path: '/search?q=kadın-jogger',
+                    label: 'menu-joggers',
+                  },
+           
+                ],
+              },
+              {
+                id: 2,
+                path: '/search?q=kadın-kemer-eşarp-diger',
+                label: 'menu-belt-scarves',
+              },
+              {
+                id: 3,
+                path: '/search?q=kadın-saat-bileklik',
+                label: 'menu-watches-wearables',
+              },
+            ],
+          },
+          {
+            id: 3,
+            columnItems: [
+              {
+                id: 1,
+                path: '/search?q=kadın-dış-giyim',
+                label: 'menu-outerwear',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=kadın-ceket-blazer',
+                    label: 'menu-jackets',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=kadın-mont-kaban',
+                    label: 'menu-coats',
+                  },
+    
+                  {
+                    id: 3,
+                    path: '/search?q=kadın-yelek',
+                    label: 'menu-waistcoat',
+                  },
+                  {
+                    id: 4,
+                    path: '/search?q=kadın-trençkot-yağmurluk',
+                    label: 'menu-trench-coat',
+                  },
+                ],
+              },
+              {
+                id: 2,
+                path: '/search?q=sports-active-wear',
+                label: 'menu-sports-active-wear',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=clothing',
+                    label: 'menu-clothing',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=footwear',
+                    label: 'menu-footwear',
+                  },
+                  {
+                    id: 3,
+                    path: '/search?q=sports-accessories',
+                    label: 'menu-sports-accessories',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            id: 4,
+            columnItems: [
+              {
+                id: 1,
+                path: '/search?q=kadın-ayakkabı',
+                label: 'menu-shoe',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=kadın-topuklu-ayakkabı',
+                    label: 'menu-high-heels',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=kadın-sandalet-terlik',
+                    label: 'menu-sandals-slipper',
+                  },
+                  {
+                    id: 3,
+                    path: '/search?q=kadın-babet-mokasen',
+                    label: 'menu-babe-moccasin',
+                  },
+                  {
+                    id: 4,
+                    path: '/search?q=kadın-bot-çizme',
+                    label: 'menu-boots-boot-shoes',
+                  },
+                  {
+                    id: 5,
+                    path: '/search?q=kadın-abiye-ayakkabı',
+                    label: 'menu-evening-shoes',
+                  },
+                  {
+                    id: 6,
+                    path: '/search?q=kadın-spor-ayakkabı',
+                    label: 'sport-shoes',
+                  },
+                ],
+              },
+              {
+                id: 2,
+                path: '/search?q=kadın-büyük-beden',
+                label: 'menu-plus-size',
+              },
+              {
+                id: 3,
+                path: '/search?q=kadın-güneş-gözlük',
+                label: 'menu-sunglasses',
+              },
+            ],
+          },
+          {
+            id: 5,
+            columnItems: [
+              {
+                id: 1,
+                path: '/search?q=kadın-iç-giyim',
+                label: 'menu-underwear',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=bra',
+                    label: 'menu-bra',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=briefs',
+                    label: 'menu-briefs',
+                  },
+                  {
+                    id: 3,
+                    path: '/search?q=sleepwear',
+                    label: 'menu-sleepwear',
+                  },
+                ],
+              },
+              {
+                id: 2,
+                path: '/search?q=belt-scarves',
+                label: 'menu-belt-scarves',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=makeup',
+                    label: 'menu-makeup',
+                  },
+                  {
+                    id: 2,
+                    path: '/search?q=skincare',
+                    label: 'menu-skincare',
+                  },
+                  {
+                    id: 3,
+                    path: '/search?q=premium-beauty',
+                    label: 'menu-premium-beauty',
+                  },
+                  {
+                    id: 4,
+                    path: '/search?q=lipsticks',
+                    label: 'menu-lipsticks',
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
         id: 2,
         path: {en:'/search?q=men-wear',tr:'/search?q=erkek-giyim'},
         label: 'menu-men-wear',
@@ -115,44 +403,44 @@ export const siteSettings = {
                 columnItemItems: [
                   {
                     id: 1,
-                    path:{en: '/search?q=men-t-shirts',tr:'/search?q=erkek-tişört'} ,
-                    label: 'menu-t-shirt',
+                    path:{en: '/search?q=men-t-shirts',tr:'/search?q=erkek-tişört-atlet'} ,
+                    label: 'menu-t-shirt-athlete',
                   },
                   {
                     id: 2,
-                    path: '/search?q=casual-shirts',
-                    label: 'menu-casual-shirts',
+                    path: {en:'/search?q=men-shirts',tr:'/search?q=erkek-gömlek'},
+                    label: 'menu-shirt',
                   },
                   {
                     id: 3,
-                    path: '/search?q=formal-shirts',
-                    label: 'menu-formal-shirts',
+                    path: '/search?q=erkek-sweatshirt',
+                    label: 'menu-sweatshirts',
                   },
                   {
                     id: 4,
-                    path: '/search?q=blazwers-coats',
-                    label: 'menu-blazwers-coats',
+                    path: '/search?q=erkek-kazak-hırka-süveter',
+                    label: 'menu-jumper-cardigan-sweater',
                   },
                   {
                     id: 5,
-                    path: '/search?q=suits',
-                    label: 'menu-suits',
+                    path: '/search?q=erkek-takım-elbise',
+                    label: 'menu-suit',
                   },
                   {
                     id: 6,
-                    path: '/search?q=jackets',
-                    label: 'menu-jackets',
+                    path: '/search?q=erkek-tulum-salopet',
+                    label: 'menu-tulum-salopet',
                   },
                 ],
               },
               {
                 id: 2,
-                path: '/search?q=belt-scarves',
+                path: '/search?q=erkek-kemer-eşarp',
                 label: 'menu-belt-scarves',
               },
               {
                 id: 3,
-                path: '/search?q=watches-wearables',
+                path: '/search?q=erkek-saat-bileklik',
                 label: 'menu-watches-wearables',
               },
             ],
@@ -162,50 +450,41 @@ export const siteSettings = {
             columnItems: [
               {
                 id: 1,
-                path: '/search?q=western-wear',
-                label: 'menu-western-wear',
+                path: '/search?q=erkek-alt-giyim',
+                label: 'menu-bottom-wear',
                 columnItemItems: [
                   {
                     id: 1,
-                    path: '/search?q=dresses',
-                    label: 'menu-dresses',
+                    path: '/search?q=erkek-pantolon',
+                    label: 'menu-trousers',
                   },
                   {
                     id: 2,
-                    path: '/search?q=jumpsuits',
-                    label: 'menu-jumpsuits',
+                    path: '/search?q=erkek-eşofman',
+                    label: 'menu-tracksuit',
                   },
                   {
                     id: 3,
-                    path: '/search?q=tops-t-shirt',
-                    label: 'menu-tops-shirts',
+                    path: '/search?q=erkek-jogger',
+                    label: 'menu-joggers',
                   },
                   {
                     id: 4,
-                    path: '/search?q=shorts-skirts',
-                    label: 'menu-shorts-skirts',
+                    path: '/search?q=erkek-şort-bermuda',
+                    label: 'menu-short-bermuda',
                   },
-                  {
-                    id: 5,
-                    path: '/search?q=shurgs',
-                    label: 'menu-shurgs',
-                  },
-                  {
-                    id: 6,
-                    path: '/search?q=blazers',
-                    label: 'menu-blazers',
-                  },
+               
                 ],
               },
               {
                 id: 2,
-                path: '/search?q=plus-size',
+                path: '/search?q=erkek-büyük-beden',
                 label: 'menu-plus-size',
               },
               {
                 id: 3,
-                path: '/search?q=sunglasses-frames',
-                label: 'menu-sunglasses-frames',
+                path: '/search?q=erkek-güneş-gözlük',
+                label: 'menu-sunglasses',
               },
             ],
           },
@@ -214,28 +493,28 @@ export const siteSettings = {
             columnItems: [
               {
                 id: 1,
-                path: '/search?q=footwear',
-                label: 'menu-footwear',
+                path: '/search?q=erkek-dış-giyim',
+                label: 'menu-outerwear',
                 columnItemItems: [
                   {
                     id: 1,
-                    path: '/search?q=flats',
-                    label: 'menu-flats',
+                    path: '/search?q=erkek-ceket-blazer',
+                    label: 'menu-jackets',
                   },
                   {
                     id: 2,
-                    path: '/search?q=casual-shoes',
-                    label: 'menu-casual-shoes',
+                    path: '/search?q=erkek-mont-kaban',
+                    label: 'menu-coats',
                   },
                   {
                     id: 3,
-                    path: '/search?q=heels',
-                    label: 'menu-heels',
+                    path: '/search?q=erkek-yelek',
+                    label: 'menu-waistcoat',
                   },
                   {
                     id: 4,
-                    path: '/search?q=boots',
-                    label: 'menu-boots',
+                    path: '/search?q=erkek-trençkot-yağmurluk',
+                    label: 'menu-trench-coat',
                   },
                 ],
               },
@@ -268,315 +547,42 @@ export const siteSettings = {
             columnItems: [
               {
                 id: 1,
-                path: '/search?q=lingerie-sleepwear',
-                label: 'menu-lingerie-sleepwear',
+                path: '/search?q=erkek-ayakkabı',
+                label: 'menu-shoe',
                 columnItemItems: [
                   {
                     id: 1,
-                    path: '/search?q=bra',
-                    label: 'menu-bra',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=briefs',
-                    label: 'menu-briefs',
-                  },
-                  {
-                    id: 3,
-                    path: '/search?q=sleepwear',
-                    label: 'menu-sleepwear',
-                  },
-                ],
-              },
-              {
-                id: 2,
-                path: '/search?q=belt-scarves',
-                label: 'menu-belt-scarves',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=makeup',
-                    label: 'menu-makeup',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=skincare',
-                    label: 'menu-skincare',
-                  },
-                  {
-                    id: 3,
-                    path: '/search?q=premium-beauty',
-                    label: 'menu-premium-beauty',
-                  },
-                  {
-                    id: 4,
-                    path: '/search?q=lipsticks',
-                    label: 'menu-lipsticks',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            id: 5,
-            columnItems: [
-              {
-                id: 1,
-                path: '/search?q=gadgets',
-                label: 'menu-gadgets',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=smart-wearables',
-                    label: 'menu-smart-wearables',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=headphones',
-                    label: 'menu-headphones',
-                  },
-                ],
-              },
-              {
-                id: 2,
-                path: '/search?q=jewellers',
-                label: 'menu-jewellers',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=fashion-jewellers',
-                    label: 'menu-fashion-jewellers',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=fine-jewellers',
-                    label: 'menu-fine-jewellers',
-                  },
-                ],
-              },
-              {
-                id: 3,
-                path: '/search?q=backpacks',
-                label: 'menu-backpacks',
-              },
-              {
-                id: 4,
-                path: '/search?q=handbags-wallets',
-                label: 'menu-handbags-wallets',
-              },
-            ],
-          },
-        ],
-      },
-      {
-        id: 3,
-        path: '/search?q=women-wear',
-        label: 'menu-women-wear',
-        columns: [
-          {
-            id: 1,
-            columnItems: [
-              {
-                id: 1,
-                path: '/search?q=gadgets',
-                label: 'menu-gadgets',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=smart-wearables',
-                    label: 'menu-smart-wearables',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=headphones',
-                    label: 'menu-headphones',
-                  },
-                ],
-              },
-              {
-                id: 2,
-                path: '/search?q=jewellers',
-                label: 'menu-jewellers',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=fashion-jewellers',
-                    label: 'menu-fashion-jewellers',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=fine-jewellers',
-                    label: 'menu-fine-jewellers',
-                  },
-                ],
-              },
-              {
-                id: 3,
-                path: '/search?q=backpacks',
-                label: 'menu-backpacks',
-              },
-              {
-                id: 4,
-                path: '/search?q=handbags-wallets',
-                label: 'menu-handbags-wallets',
-              },
-            ],
-          },
-          {
-            id: 2,
-            columnItems: [
-              {
-                id: 1,
-                path: '/search?q=top-wear',
-                label: 'menu-top-wear',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=t-shit-shirtrt',
-                    label: 'menu-t-shirt',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=casual-shirts',
-                    label: 'menu-casual-shirts',
-                  },
-                  {
-                    id: 3,
-                    path: '/search?q=formal-shirts',
-                    label: 'menu-formal-shirts',
-                  },
-                  {
-                    id: 4,
-                    path: '/search?q=blazwers-coats',
-                    label: 'menu-blazwers-coats',
-                  },
-                  {
-                    id: 5,
-                    path: '/search?q=suits',
-                    label: 'menu-suits',
-                  },
-                  {
-                    id: 6,
-                    path: '/search?q=jackets',
-                    label: 'menu-jackets',
-                  },
-                ],
-              },
-              {
-                id: 2,
-                path: '/search?q=belt-scarves',
-                label: 'menu-belt-scarves',
-              },
-              {
-                id: 3,
-                path: '/search?q=watches-wearables',
-                label: 'menu-watches-wearables',
-              },
-            ],
-          },
-          {
-            id: 3,
-            columnItems: [
-              {
-                id: 1,
-                path: '/search?q=footwear',
-                label: 'menu-footwear',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=flats',
-                    label: 'menu-flats',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=casual-shoes',
-                    label: 'menu-casual-shoes',
-                  },
-                  {
-                    id: 3,
-                    path: '/search?q=heels',
-                    label: 'menu-heels',
-                  },
-                  {
-                    id: 4,
-                    path: '/search?q=boots',
+                    path: '/search?q=erkek-bot',
                     label: 'menu-boots',
                   },
-                ],
-              },
-              {
-                id: 2,
-                path: '/search?q=sports-active-wear',
-                label: 'menu-sports-active-wear',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=clothing',
-                    label: 'menu-clothing',
-                  },
                   {
                     id: 2,
-                    path: '/search?q=footwear',
-                    label: 'menu-footwear',
+                    path: '/search?q=erkek-sandalet-terlik',
+                    label: 'menu-sandals-slipper',
                   },
                   {
                     id: 3,
-                    path: '/search?q=sports-accessories',
-                    label: 'menu-sports-accessories',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            id: 4,
-            columnItems: [
-              {
-                id: 1,
-                path: '/search?q=western-wear',
-                label: 'menu-western-wear',
-                columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=dresses',
-                    label: 'menu-dresses',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=jumpsuits',
-                    label: 'menu-jumpsuits',
+                    path: '/search?q=erkek-babet-mokasen',
+                    label: 'menu-babe-moccasin',
                   },
                   {
                     id: 3,
-                    path: '/search?q=tops-t-shirt',
-                    label: 'menu-tops-shirts',
-                  },
-                  {
-                    id: 4,
-                    path: '/search?q=shorts-skirts',
-                    label: 'menu-shorts-skirts',
-                  },
-                  {
-                    id: 5,
-                    path: '/search?q=shurgs',
-                    label: 'menu-shurgs',
-                  },
-                  {
-                    id: 6,
-                    path: '/search?q=blazers',
-                    label: 'menu-blazers',
+                    path: '/search?q=erkek-sneaker-ayakkabı',
+                    label: 'menu-sneakers',
                   },
                 ],
               },
               {
                 id: 2,
-                path: '/search?q=plus-size',
-                label: 'menu-plus-size',
-              },
-              {
-                id: 3,
-                path: '/search?q=sunglasses-frames',
-                label: 'menu-sunglasses-frames',
+                path: '/search?q=erkek-kozmetik',
+                label: 'menu-cosmetic',
+                columnItemItems: [
+                  {
+                    id: 1,
+                    path: '/search?q=erkek-çilt-bakımı',
+                    label: 'menu-scincare',
+                  }
+                ],
               },
             ],
           },
@@ -585,57 +591,44 @@ export const siteSettings = {
             columnItems: [
               {
                 id: 1,
-                path: '/search?q=lingerie-sleepwear',
-                label: 'menu-lingerie-sleepwear',
+                path: '/search?q=erkek-iç-giyim',
+                label: 'menu-underwear',
                 columnItemItems: [
-                  {
-                    id: 1,
-                    path: '/search?q=bra',
-                    label: 'menu-bra',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=briefs',
-                    label: 'menu-briefs',
-                  },
-                  {
-                    id: 3,
-                    path: '/search?q=sleepwear',
-                    label: 'menu-sleepwear',
-                  },
+                  // {
+                  //   id: 1,
+                  //   path: '/search?q=smart-wearables',
+                  //   label: 'menu-smart-wearables',
+                  // },
+                  // {
+                  //   id: 2,
+                  //   path: '/search?q=headphones',
+                  //   label: 'menu-headphones',
+                  // },
                 ],
               },
               {
                 id: 2,
-                path: '/search?q=belt-scarves',
-                label: 'menu-belt-scarves',
+                path: '/search?q=jewellers',
+                label: 'menu-jewellers',
                 columnItemItems: [
                   {
                     id: 1,
-                    path: '/search?q=makeup',
-                    label: 'menu-makeup',
-                  },
-                  {
-                    id: 2,
-                    path: '/search?q=skincare',
-                    label: 'menu-skincare',
-                  },
-                  {
-                    id: 3,
-                    path: '/search?q=premium-beauty',
-                    label: 'menu-premium-beauty',
-                  },
-                  {
-                    id: 4,
-                    path: '/search?q=lipsticks',
-                    label: 'menu-lipsticks',
-                  },
+                    path: '/search?q=erkek-yüzük-küpe',
+                    label: 'menu-ring-earring',
+                  }
                 ],
               },
+              {
+                id: 3,
+                path: '/search?q=erkek-çanta-cüzdan',
+                label: 'menu-bags-wallets',
+              },
+      
             ],
           },
         ],
       },
+
       {
         id: 4,
         path: '/search',

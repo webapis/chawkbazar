@@ -8,23 +8,23 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:159357@localhost:3306/products"
+  url = env("DATABASE_URL")
 }
 
 model Products {
   id          Int     @id @default(autoincrement())
-  title       String  @db.VarChar(300)
+  title       String?  @db.VarChar(300)
   index       Int
   priceNew    String?
   price       Decimal?
-  imageUrl    String  @db.VarChar(300)
+  imageUrl    String?  @db.VarChar(300)
   link        String?
   timestamp   String?
   marka       String?
   gender      String?
-  renk        String
-  altKategori String
-  kategori    String
+  renk        String?
+  altKategori String?
+  kategori    String?
 
   @@fulltext([title])
 }

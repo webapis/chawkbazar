@@ -1,3 +1,4 @@
+import React from "react";
 import { Drawer } from '@components/common/drawer/drawer';
 import FilterIcon from '@components/icons/filter-icon';
 import Text from '@components/ui/text';
@@ -8,17 +9,27 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { getDirection } from '@utils/get-direction';
 import motionProps from '@components/common/drawer/motion';
+import { useProductsQuery } from "@framework/product/get-all-products";
 
 export default function SearchTopBar() {
 	const { openFilter, displayFilter, closeFilter } = useUI();
+	const { locale,query } = useRouter();
+	const {
+
+		data,
+	    
+
+	} = useProductsQuery({ ...query });
+
+
 	const { t } = useTranslation('common');
-	const { locale } = useRouter();
+
 	const dir = getDirection(locale);
 	const contentWrapperCSS = dir === 'ltr' ? { left: 0 } : { right: 0 };
 	return (
 		<div className="flex justify-between items-center mb-7">
 			<Text variant="pageHeading" className="hidden lg:inline-flex pb-1">
-				{t('text-casual-wear')}
+				{/* {t('text-casual-wear')} */}
 			</Text>
 			<button
 				className="lg:hidden text-heading text-sm px-4 py-2 font-semibold border border-gray-300 rounded-md flex items-center transition duration-200 ease-in-out focus:outline-none hover:bg-gray-200"
@@ -29,7 +40,7 @@ export default function SearchTopBar() {
 			</button>
 			<div className="flex items-center justify-end">
 				<div className="flex-shrink-0 text-body text-xs md:text-sm leading-4 pe-4 md:me-6 ps-2 hidden lg:block">
-					9,608 {t('text-items')}
+					{data && new Intl.NumberFormat().format(data?.pages[0].count)   +' Ürün'} 
 				</div>
 				<ListBox
 					options={[

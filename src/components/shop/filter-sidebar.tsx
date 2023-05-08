@@ -1,3 +1,4 @@
+
 import { ShopFilters } from "@components/shop/filters";
 import Scrollbar from "@components/common/scrollbar";
 import { useUI } from "@contexts/ui.context";
@@ -8,9 +9,11 @@ import { useRouter } from "next/router";
 
 const FilterSidebar = () => {
 	const { closeFilter } = useUI();
-	const router = useRouter();
+	const { locale } = useRouter();
 	const { t } = useTranslation("common");
-	const dir = getDirection(router.locale);
+	
+	const dir = getDirection(locale);
+	
 	return (
 		<div className="flex flex-col justify-between w-full h-full">
 			<div className="w-full border-b border-gray-100 flex justify-between items-center relative pe-5 md:pe-7 flex-shrink-0 py-0.5">

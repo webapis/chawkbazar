@@ -16,7 +16,7 @@ const ListMenu = ({
 }: any) => {
   const { t } = useTranslation('menu')
   return (
-    <li className={cn(!hasMegaMenu ? 'group relative' : '')}>
+    <li  className={cn(!hasMegaMenu ? 'group relative' : '')}>
       <Link
         href={data.path}
         className='flex items-center py-2 ps-5 xl:ps-7 pe-3 xl:pe-3.5 hover:text-heading hover:bg-gray-300'

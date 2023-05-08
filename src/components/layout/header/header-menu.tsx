@@ -16,7 +16,7 @@ const HeaderMenu: React.FC<MenuProps> = ({ data, className }) => {
 	return (
 		<nav className={classNames(`headerMenu flex w-full relative`, className)}>
 			{data?.map((item: any) => (
-				<div
+				<div 
 					className={`menuItem group cursor-pointer py-7 ${
 						item.subMenu ? "relative" : ""
 					}`}
@@ -39,7 +39,7 @@ const HeaderMenu: React.FC<MenuProps> = ({ data, className }) => {
 					)}
 
 					{item?.subMenu && Array.isArray(item.subMenu) && (
-						<div className="absolute invisible bg-gray-200 opacity-0 group-hover:visible subMenu shadow-header start-0 group-hover:opacity-100">
+						<div  className="absolute invisible bg-gray-200 opacity-0 group-hover:visible subMenu shadow-header start-0 group-hover:opacity-100">
 							<ul className="py-5 text-sm text-body">
 								{item.subMenu.map((menu: any, index: number) => {
 									const dept: number = 1;

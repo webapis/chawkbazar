@@ -19,10 +19,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ columns }) => {
 	const {locale} = useRouter()
 	const { t } = useTranslation("menu");
 	return (
-		<div className="absolute bg-gray-200 megaMenu shadow-header -start-28 xl:start-0">
+		<div    className="absolute bg-gray-200 megaMenu shadow-header -start-28 xl:start-0">
 			<div className="grid grid-cols-5">
 				{columns?.map((column) => (
-					<ul
+					<ul style={{maxHeight:'85vh',overflowY:'auto'}} 
 						className="pt-6 even:bg-gray-150 pb-7 2xl:pb-8 2xl:pt-7"
 						key={column.id}
 					>

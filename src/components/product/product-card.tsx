@@ -57,7 +57,7 @@ const ProductCard: FC<ProductProps> = ({
   demoVariant,
   disableBorderRadius = false,
 }) => {
-  const { openModal, setModalView, setModalData } = useUI();
+ // const { openModal, setModalView, setModalData } = useUI();
   const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
   const { price, basePrice, discount } = usePrice({
     amount: product.sale_price ? product.sale_price : product.price,
@@ -65,10 +65,12 @@ const ProductCard: FC<ProductProps> = ({
     currencyCode: "TRY",
   
   });
+  console.log('product',product)
   function handlePopupView() {
-    setModalData({ data: product });
-    setModalView("PRODUCT_VIEW");
-    return openModal();
+    // setModalData({ data: product });
+    // setModalView("PRODUCT_VIEW");
+    // return openModal();
+    window.open(product.link, '_blank');
   }
 
   return (

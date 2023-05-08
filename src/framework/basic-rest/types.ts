@@ -145,6 +145,7 @@ export type Product = {
   variations?: object;
   [key: string]: unknown;
   isNewArrival?: boolean;
+  link: string
 };
 export type OrderItem = {
   id: number | string;

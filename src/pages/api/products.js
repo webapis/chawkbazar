@@ -21,9 +21,9 @@ const queries = {
   }
 }
 export default async function handler(req, res) {
-  console.log('req.query..........', req.query)
+
   const page = req.query.page
-  console.log('page.....>>>', page)
+
   const q = queries[req.query.q]
 
   let newquery = { where: {} }
@@ -62,7 +62,7 @@ export default async function handler(req, res) {
     else if (query === 'price') {
       const priceRange = req.query[query].split(',').map(m => { return { price: m.split('-')[1] ? { gte: parseFloat(m.split('-')[0]), lte: parseFloat(m.split('-')[1]) } : { gte: parseFloat(m.split('-')[0]) } } })
       newquery.where.OR = priceRange
-      console.log('', priceRange)
+
     }
 
   }
@@ -72,7 +72,14 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
+      const aggregations = await prisma.products.aggregate({
+        _count: {
+          index: true,
+        },
+        ...newquery
+      })
       const data = await prisma.products.findMany({
+
         orderBy: [
           {
             index: 'asc',
@@ -82,6 +89,7 @@ export default async function handler(req, res) {
         take: 100,
         ...newquery
       });
+      console.log('aggregations!!!!!', aggregations._count.index)
       debugger
       const mappedData = data.map((m, i) => {
         const imageSource =
@@ -90,9 +98,10 @@ export default async function handler(req, res) {
           m.imageUrl +
           placeholder[m.marka].imgPostFix;
 
+          const link =   placeholder[m.marka].detailHost.trim()+m.link
         return {
           name: m.title.substr(m.title.indexOf(" ")).replace('_', '| '),
-    
+          link ,
           image: {
             "id": i,
             "thumbnail": imageSource,
@@ -208,7 +217,7 @@ export default async function handler(req, res) {
         }
       })
 
-      return res.status(200).json({ data: mappedData });
+      return res.status(200).json({ data: mappedData, count: aggregations._count.index });
     } catch (err) {
       console.error(err);
       return res.status(500).json({ msg: 'Something went wrong' });
