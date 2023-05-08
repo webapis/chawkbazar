@@ -24,5 +24,5 @@ const http = axios.create({
 //     return Promise.reject(error);
 //   }
 // );
-
+///////
 export default http;
