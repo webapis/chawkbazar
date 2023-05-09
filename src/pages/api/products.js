@@ -86,11 +86,11 @@ console.log('req.query',req.query)
       debugger
       const data = await prisma.products.findMany({
 
-        orderBy: [
-          {
-            index: 'asc',
-          }
-        ],
+        // orderBy: [
+        //   {
+        //     index: 'asc',
+        //   }
+        // ],
         skip: page === 1 ? 0 : 100 * page,
         take: 100,
         ...newquery
