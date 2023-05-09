@@ -61,7 +61,7 @@ const ProductCard: FC<ProductProps> = ({
   placeholder
 }) => {
   // const { openModal, setModalView, setModalData } = useUI();
-  const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
+  // const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
   const imageEl = useRef(null);
   const { price, basePrice, discount } = usePrice({
     amount: product.sale_price ? product.sale_price : product.price,
@@ -72,7 +72,7 @@ const ProductCard: FC<ProductProps> = ({
 
 
   useEffect(() => {
-    imageEl.current.src = placeholderImage
+    imageEl.current.src = placeholder
     if (window.IntersectionObserver) {
 
       let observer = new IntersectionObserver((entries, observer) => {
