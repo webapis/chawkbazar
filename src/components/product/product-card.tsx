@@ -39,6 +39,7 @@ interface ProductProps {
   bgGray?: boolean;
   demoVariant?: "ancient";
   disableBorderRadius?: boolean;
+  placeholder?:string
 }
 
 const ProductCard: FC<ProductProps> = ({
@@ -57,6 +58,7 @@ const ProductCard: FC<ProductProps> = ({
   bgGray = false,
   demoVariant,
   disableBorderRadius = false,
+  placeholder
 }) => {
   // const { openModal, setModalView, setModalData } = useUI();
   const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
@@ -149,8 +151,8 @@ const ProductCard: FC<ProductProps> = ({
       >
         <img
       ref={imageEl} 
-         data-src={product?.image?.thumbnail}
-          src={product?.image?.thumbnail ?? placeholderImage}
+         data-src={product?.image?.original}
+          src={placeholder}
           width={demoVariant === "ancient" ? 352 : imgWidth}
           height={demoVariant === "ancient" ? 452 : imgHeight}
      
