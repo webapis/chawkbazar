@@ -1,10 +1,11 @@
 import cn from "classnames";
-import Image from "next/image";
+import {useRef, useEffect} from "react"
 import type { FC } from "react";
 import { useUI } from "@contexts/ui.context";
+
 import usePrice from "@framework/product/use-price";
 import { Product } from "@framework/types";
-import {formatMoney} from 'accounting-js'
+import { formatMoney } from 'accounting-js'
 // import ProductIcon1 from '../../../public/assets/images/products/icons/product-icon1.svg'
 // import ProductIcon2 from '../../../public/assets/images/products/icons/product-icon2.svg'
 // import ProductIcon3 from '../../../public/assets/images/products/icons/product-icon3.svg'
@@ -19,15 +20,15 @@ interface ProductProps {
   contactClassName?: string;
   imageContentClassName?: string;
   variant?:
-    | "grid"
-    | "gridSlim"
-    | "list"
-    | "listSmall"
-    | "gridModern"
-    | "gridModernWide"
-    | "gridTrendy"
-    | "rounded"
-    | "circle";
+  | "grid"
+  | "gridSlim"
+  | "list"
+  | "listSmall"
+  | "gridModern"
+  | "gridModernWide"
+  | "gridTrendy"
+  | "rounded"
+  | "circle";
   imgWidth?: number | string;
   imgHeight?: number | string;
   imgLoading?: "eager" | "lazy";
@@ -48,7 +49,7 @@ const ProductCard: FC<ProductProps> = ({
   variant = "list",
   imgWidth = 340,
   imgHeight = 440,
-  imgLoading,
+
   hideProductDescription = false,
   showCategory = false,
   showRating = false,
@@ -57,15 +58,41 @@ const ProductCard: FC<ProductProps> = ({
   demoVariant,
   disableBorderRadius = false,
 }) => {
- // const { openModal, setModalView, setModalData } = useUI();
+  // const { openModal, setModalView, setModalData } = useUI();
   const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
+  const imageEl = useRef(null);
   const { price, basePrice, discount } = usePrice({
     amount: product.sale_price ? product.sale_price : product.price,
     baseAmount: product.price,
     currencyCode: "TRY",
-  
+
   });
-  console.log('product',product)
+
+
+  useEffect(() => {
+    imageEl.current.src = placeholderImage
+    if (window.IntersectionObserver) {
+
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+
+            entry.target.src = entry.target.dataset.src;
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.50
+      });
+      window.obz = observer
+      window.obz.observe(imageEl.current)
+    }
+
+ 
+  }, [imageEl.current]);
+  console.log('product', product)
   function handlePopupView() {
     // setModalData({ data: product });
     // setModalView("PRODUCT_VIEW");
@@ -74,10 +101,9 @@ const ProductCard: FC<ProductProps> = ({
   }
 
   return (
-    <div style={{textTransform:'capitalize'}}
+    <div style={{ textTransform: 'capitalize' }}
       className={cn(
-        `group box-border overflow-hidden flex ${
-          !disableBorderRadius && "rounded-md"
+        `group box-border overflow-hidden flex ${!disableBorderRadius && "rounded-md"
         } cursor-pointer`,
         {
           "pe-0 pb-2 lg:pb-3 flex-col items-start transition duration-200 ease-in-out transform hover:-translate-y-1 md:hover:-translate-y-1.5 hover:shadow-product":
@@ -121,16 +147,17 @@ const ProductCard: FC<ProductProps> = ({
           imageContentClassName
         )}
       >
-        <Image
+        <img
+      ref={imageEl} 
+         data-src={product?.image?.thumbnail}
           src={product?.image?.thumbnail ?? placeholderImage}
           width={demoVariant === "ancient" ? 352 : imgWidth}
           height={demoVariant === "ancient" ? 452 : imgHeight}
-          loading={imgLoading}
-          quality={100}
+     
+     
           alt={product?.name || "Product Image"}
           className={cn(
-            `bg-gray-300 object-cover ${
-              !disableBorderRadius && "rounded-s-md"
+            `bg-gray-300 object-cover ${!disableBorderRadius && "rounded-s-md"
             }`,
             {
               "w-full transition duration-200 ease-in":
@@ -204,25 +231,25 @@ const ProductCard: FC<ProductProps> = ({
         {(variant === "gridModern" ||
           variant === "gridModernWide" ||
           variant === "gridTrendy") && (
-          <div className="py-2 flex items-center gap-x-2">
-            <svg
-              className="w-4 h-4 sm:w-6 sm:h-6 text-[#FBD103]"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-            </svg>
-            <span className="text-xs sm:text-sm text-heading font-semibold truncate">
-              4.5
-            </span>
-            {product.quantity === 0 && (
-              <span className="text-xs sm:text-sm leading-5 ps-3 font-semibold text-[#EF4444]">
-                Out of stock
+            <div className="py-2 flex items-center gap-x-2">
+              <svg
+                className="w-4 h-4 sm:w-6 sm:h-6 text-[#FBD103]"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <span className="text-xs sm:text-sm text-heading font-semibold truncate">
+                4.5
               </span>
-            )}
-          </div>
-        )}
+              {product.quantity === 0 && (
+                <span className="text-xs sm:text-sm leading-5 ps-3 font-semibold text-[#EF4444]">
+                  Out of stock
+                </span>
+              )}
+            </div>
+          )}
         {/* space-y-1 md:space-x-2.5 lg:space-x-2.5 xl:space-x-2.5 2xl:space-x-2.5  */}
         {!!(showCategory || showRating) && (
           <div className="flex flex-col md:flex-row md:items-center lg:flex-row xl:flex-row 2xl:flex-row  mb-0.5 items-start">
@@ -268,31 +295,27 @@ const ProductCard: FC<ProductProps> = ({
           </p>
         )}
         <div
-          className={`font-semibold text-sm sm:text-base mt-1.5 space-s-2 ${
-            variant === "grid"
+          className={`font-semibold text-sm sm:text-base mt-1.5 space-s-2 ${variant === "grid"
               ? "lg:text-lg lg:mt-2.5"
               : "sm:text-xl md:text-base lg:text-xl md:mt-2.5 2xl:mt-3"
-          }
-          ${
-            variant === "gridModern" ||
-            variant === "gridModernWide" ||
-            variant === "gridTrendy"
+            }
+          ${variant === "gridModern" ||
+              variant === "gridModernWide" ||
+              variant === "gridTrendy"
               ? "flex flex-col-reverse !space-s-0 !mt-auto"
               : ""
-          } ${bgTransparent ? "text-white" : "text-heading"}`}
+            } ${bgTransparent ? "text-white" : "text-heading"}`}
         >
           <span
-            className={`inline-block ${
-              demoVariant === "ancient" && "font-bold text-gray-900 text-lg"
-            }`}
+            className={`inline-block ${demoVariant === "ancient" && "font-bold text-gray-900 text-lg"
+              }`}
           >
-          {formatMoney(product.sale_price,{symbol : "₺ ",decimal : ".",thousand: ",",precision : 2})}
+            {formatMoney(product.sale_price, { symbol: "₺ ", decimal: ".", thousand: ",", precision: 2 })}
           </span>
           {discount && (
             <del
-              className={`sm:text-base font-normal ${
-                bgTransparent ? "text-white/70" : "text-gray-800"
-              }`}
+              className={`sm:text-base font-normal ${bgTransparent ? "text-white/70" : "text-gray-800"
+                }`}
             >
               {basePrice}
             </del>
