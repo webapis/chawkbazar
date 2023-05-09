@@ -125,7 +125,7 @@ If you want to host the template in vercel.com then follow the below procedure
 ```bash
 vercel
 ```
-ddd
+dddd
 ### NOTE: for deploying to `vercel` using terminal you need to install `vercel-cli` on your machine for more information please visit [here](https://vercel.com/docs/cli?query=cli#introduction/vercel-cli-reference)
 
 ### for other hosting provider please follow below url
