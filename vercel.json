@@ -6,13 +6,6 @@
 		"env": {
 			"NEXT_PUBLIC_REST_API_ENDPOINT": "https://chawkbazar-webapisgithub.vercel.app/api"
 		}
-	},
+	}
 
-	"functions": {
-		"src/pages/api/products.js": {
-		  "memory": 3008,
-		  "maxDuration": 60
-		}
-
-	  }
 }
