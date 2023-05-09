@@ -9,7 +9,9 @@
 		"genKeywords": "node utils/generateKeywords.js",
 		"downloadData": "node utils/downloadData.mjs",
 		"importData": "node utils/script.mjs",
-		"start": "next start"
+		"start": "next start",
+		"vercel-build": "prisma generate && prisma migrate deploy && next build",
+		"prisma:generate": "prisma generate"
 	},
 	"dependencies": {
 		"@prisma/client": "4.13.0",
