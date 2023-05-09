@@ -21,6 +21,7 @@ const queries = {
   }
 }
 export default async function handler(req, res) {
+  res.setHeader('Cache-Control', 's-maxage=86400');
   res.setHeader('Access-Control-Allow-Origin', '*')
   if (req.method === 'OPTIONS') {
       res.status(200).end()
