@@ -21,6 +21,7 @@ const queries = {
   }
 }
 export default async function handler(req, res) {
+  res.setHeader('Cache-Control', 's-maxage=86400');
   res.setHeader('Access-Control-Allow-Origin', '*')
   if (req.method === 'OPTIONS') {
       res.status(200).end()
@@ -77,25 +78,25 @@ console.log('req.query',req.query)
   if (req.method === 'GET') {
     try {
       debugger
-      const aggregations = await prisma.products.aggregate({
-        _count: {
-          index: true,
-        },
-        ...newquery
-      })
+      // const aggregations = await prisma.products.aggregate({
+      //   _count: {
+      //     index: true,
+      //   },
+      //   ...newquery
+      // })
       debugger
       const data = await prisma.products.findMany({
 
-        orderBy: [
-          {
-            index: 'asc',
-          }
-        ],
+        // orderBy: [
+        //   {
+        //     index: 'asc',
+        //   }
+        // ],
         skip: page === 1 ? 0 : 100 * page,
         take: 100,
         ...newquery
       });
-      console.log('aggregations!!!!!', aggregations._count.index)
+
       debugger
       const mappedData = data.map((m, i) => {
         const imageSource =
@@ -223,7 +224,7 @@ console.log('req.query',req.query)
         }
       })
 debugger
-      return res.status(200).json({ data: mappedData, count: aggregations._count.index });
+      return res.status(200).json({ data: mappedData, count:0 });
     } catch (err) {
       console.error(err);
       return res.status(500).json({ msg: 'Something went wrong' });

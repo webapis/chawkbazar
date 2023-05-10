@@ -10,6 +10,7 @@ const ErrorInformation: React.FC = () => {
 		<div className="border-t border-b border-gray-300 text-center px-16 py-16 sm:py-20 lg:py-24 xl:py-32 flex items-center justify-center">
 			<div>
 				<Image
+			
 					src="/assets/images/404.svg"
 					alt={t("error-heading")}
 					width={822}
