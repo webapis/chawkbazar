@@ -32,6 +32,10 @@ model Products {
   @@index(fields: [gender, kategori, altKategori])
   @@index(fields: [gender, kategori, altKategori, marka])
   @@index(fields: [gender, kategori, altKategori, marka, renk])
+  @@index(fields: [kategori])
+  @@index(fields: [kategori, altKategori])
+  @@index(fields: [marka])
+  @@index(fields: [renk])
 }
 
 model Users {
