@@ -78,12 +78,12 @@ console.log('req.query',req.query)
   if (req.method === 'GET') {
     try {
       debugger
-      const aggregations = await prisma.products.aggregate({
-        _count: {
-          index: true,
-        },
-        ...newquery
-      })
+      // const aggregations = await prisma.products.aggregate({
+      //   _count: {
+      //     index: true,
+      //   },
+      //   ...newquery
+      // })
       console.log(aggregations)
       debugger
       const data = await prisma.products.findMany({
@@ -225,7 +225,7 @@ console.log('req.query',req.query)
         }
       })
 debugger
-      return res.status(200).json({ data: mappedData, count:aggregations._count.index });
+      return res.status(200).json({ data: mappedData, count:0});
     } catch (err) {
       console.error(err);
       return res.status(500).json({ msg: 'Something went wrong' });
