@@ -84,7 +84,7 @@ console.log('req.query',req.query)
       //   },
       //   ...newquery
       // })
-      console.log(aggregations)
+
       debugger
       const data = await prisma.products.findMany({
 
