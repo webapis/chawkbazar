@@ -26,6 +26,7 @@ model Products {
   altKategori String?
   kategori    String?
 
+  @@index(fields: [gender,kategori,altKategori])
   // @@fulltext([title])
 }
 
