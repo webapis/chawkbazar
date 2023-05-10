@@ -8,11 +8,11 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url =env("DATABASE_URL")
+  url      = env("DATABASE_URL")
 }
 
 model Products {
-  id          Int     @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   title       String?  @db.VarChar(300)
   index       Int
   priceNew    String?
@@ -25,9 +25,10 @@ model Products {
   renk        String?
   altKategori String?
   kategori    String?
-
-  @@index(fields: [gender,kategori,altKategori])
   // @@fulltext([title])
+
+  @@index(fields: [gender, kategori, altKategori])
+  @@index(fields: [gender])
 }
 
 model Users {
