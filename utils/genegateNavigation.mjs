@@ -6,7 +6,8 @@ const Rawallkeywords = fs.readFileSync(`${process.cwd()}/utils/keywords.json`, {
 const allkeywords = JSON.parse(Rawallkeywords)
 
 function genegateNavigation({ title }) {
-  const keywords = allkeywords
+  const keywords = allkeywords.filter(f => (!f.disabled))
+  debugger
   const matchingKeywords = keywords.map((m) => {
     return { ...m, index: m.index.toString() + '-' }
   }).filter((kws) => {

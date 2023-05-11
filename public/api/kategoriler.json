@@ -376,5 +376,24 @@
       "productCount": 20,
       "groupname": "ayakkabı"
     }
+    ,
+    
+    {
+      "id": 51,
+      "name": "Babet",
+      "slug": "babet",
+      "productCount": 20,
+      "groupname": "ayakkabı"
+    }
+    ,
+    
+    {
+      "id": 52,
+      "name": "Mokasen",
+      "slug": "mokasen",
+      "productCount": 20,
+      "groupname": "ayakkabı"
+    }
+  
   ]
 }

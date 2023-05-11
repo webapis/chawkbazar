@@ -40,8 +40,8 @@ while (!isComplete) {
   for (let filepath of filePaths) {
 
     const raw = fs.readFileSync(filepath, { encoding: 'utf-8' })
-    const data = JSON.parse(raw).map(m => { return { ...m, priceNew: m.priceNew? m.priceNew.toString():m.priceNew, timestamp: m.timestamp.toString(), price: m.priceNew ? mapPrice(m.priceNew.toString()) : 0 } }).slice(sliceCounter, sliceCounter + 20)
-    debugger
+    const data = JSON.parse(raw).map(m => { return { ...m, priceNew: m.priceNew ? m.priceNew.toString() : m.priceNew, timestamp: m.timestamp.toString(), price: m.priceNew ? mapPrice(m.priceNew.toString()) : 0 } }).slice(sliceCounter, sliceCounter + 20)
+
     list.push(...data)
 
 
@@ -97,7 +97,7 @@ async function main({ data }) {
     const user = await prisma.products.createMany({ data })
     await prisma.$disconnect()
   } catch (error) {
-    console.error(error)
+    console.error(error, data)
 
     await prisma.$disconnect()
 

@@ -3204,7 +3204,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 303
+  "index": 303,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e71712a1a21079f222dde"
@@ -3226,7 +3227,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 305
+  "index": 305,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e721bfd42a6826171e8ae"
@@ -3236,7 +3238,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 306
+  "index": 306,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e7225fd42a6826171e8af"
@@ -3246,7 +3249,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 307
+  "index": 307,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e722efd42a6826171e8b0"
@@ -3256,7 +3260,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 308
+  "index": 308,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e723cfd42a6826171e8b1"
@@ -3266,7 +3271,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 309
+  "index": 309,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e7248fd42a6826171e8b2"
@@ -3276,7 +3282,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 310
+  "index": 310,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e7253fd42a6826171e8b3"
@@ -3286,7 +3293,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 311
+  "index": 311,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e725cfd42a6826171e8b4"
@@ -3296,7 +3304,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 312
+  "index": 312,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e7265fd42a6826171e8b5"
@@ -3306,7 +3315,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 313
+  "index": 313,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e727cfd42a6826171e8b6"
@@ -3316,7 +3326,8 @@
   "exclude": "",
   "keywordType": "keyword",
   "groupName": "Seçenekler",
-  "index": 314
+  "index": 314,
+  "disabled": true
 },{
   "_id": {
     "$oid": "642e7df072a9427a8ecbb1c1"
