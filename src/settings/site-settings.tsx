@@ -566,7 +566,7 @@ export const siteSettings = {
                     label: 'menu-babe-moccasin',
                   },
                   {
-                    id: 3,
+                    id: 4,
                     path: '/search?q=erkek-sneaker-ayakkabı',
                     label: 'menu-sneakers',
                   },

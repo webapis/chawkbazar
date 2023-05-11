@@ -28,14 +28,14 @@ export const UrunFilter = () => {
 	}, [query?.k]);
 	React.useEffect(() => {
 		console.log('filteredState', filteredState)
-	}, [filteredState]);
+	}, [data?.kategoriler]);
 
 	React.useEffect(() => {
 
 		setGenders(selectedGenders)
 
 
-	}, [query?.g]);
+	}, [query?.g,data?.kategoriler]);
 	function handleFilter(e: React.FormEvent<HTMLInputElement>): void {
 		setFilteredState(e.currentTarget.value)
 	}
@@ -83,7 +83,7 @@ export const UrunFilter = () => {
 				border: '1px solid #555'
 			}} />
 			<div className="mt-2 flex flex-col space-y-4" style={{ height: 400, overflow: 'auto' }}>
-				{filtered?.length === 0 && items?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
+				{filtered&&filtered?.length === 0 && items?.sort((a, b) => {
 					var textA = a.name.toUpperCase();
 					var textB = b.name.toUpperCase();
 					return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
@@ -98,7 +98,7 @@ export const UrunFilter = () => {
 						onChange={handleItemClick}
 					/>
 				))}
-				{filtered?.length > 0 && filtered?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
+				{filtered&&filtered?.length > 0 && filtered?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
 					var textA = a.name.toUpperCase();
 					var textB = b.name.toUpperCase();
 					return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
