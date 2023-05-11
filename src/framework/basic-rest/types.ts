@@ -81,11 +81,13 @@ export type Kategori = {
   id: number | string;
   name: string;
   slug: string;
+  gender?: [];
   details?: string;
   image?: Attachment;
   icon?: string;
   kategoriler?: Kategori[];
   productCount?: number;
+
 };
 export type AltKategori = {
   id: number | string;

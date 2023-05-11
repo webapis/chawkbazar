@@ -65,7 +65,7 @@ export const UrunFilter = () => {
 		);
 	}
 	const items = data?.kategoriler.data;
-	const filtered = genders && items?.filter(item => genders.some(s => item.gender.find(d => d === s)))
+	const filtered = genders && items?.filter(item => genders.some(s => item.gender?.find(d => d === s)))
 	console.log('filtered', filtered)
 	return (
 		<div className="block border-b border-gray-300 pb-7 mb-7">
