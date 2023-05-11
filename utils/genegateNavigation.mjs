@@ -3,7 +3,7 @@ import { productTitleMatch } from './productTitleMatch.mjs'
 import fs from 'fs'
 
 const Rawallkeywords = fs.readFileSync(`${process.cwd()}/utils/keywords.json`, { encoding: 'utf-8' })
-const allkeywords=JSON.parse(Rawallkeywords)
+const allkeywords = JSON.parse(Rawallkeywords)
 
 function genegateNavigation({ title }) {
   const keywords = allkeywords
@@ -48,6 +48,7 @@ function genegateNavigation({ title }) {
         case 'Ev giyim':
         case 'Üst giyim':
         case "İç giyim":
+        case "Ayakkabı":
           filter['kategori'] = g.title
           break;
       }

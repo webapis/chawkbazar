@@ -155,7 +155,7 @@ export const siteSettings = {
               },
               {
                 id: 2,
-                path: '/search?q=kadın-mücevherler',
+                path: '/search?q=kadın-mücevher',
                 label: 'menu-jewellers',
                 columnItemItems: [
                   {
@@ -192,7 +192,7 @@ export const siteSettings = {
                   },
                   {
                     id: 3,
-                    path: '/search?q=kadın-şort',
+                    path: '/search?q=kadın-şort-bermuda',
                     label: 'menu-short-bermuda',
                   },
                   {

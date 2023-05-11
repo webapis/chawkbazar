@@ -4,195 +4,377 @@
       "id": 1,
       "name": "Elbise",
       "slug": "elbise",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 2,
       "name": "Tişört",
       "slug": "tişört",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 3,
       "name": "Bluz",
       "slug": "bluz",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 4,
       "name": "Abiye",
       "slug": "abiye",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 5,
       "name": "Atlet",
       "slug": "atlet",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 6,
       "name": "sweatshirt",
       "slug": "sweatshirt",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 7,
       "name": "tunik",
       "slug": "tunik",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 8,
       "name": "kazak",
       "slug": "kazak",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 9,
       "name": "hırka",
       "slug": "hırka",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 10,
       "name": "büstyer",
       "slug": "büstyer",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 11,
       "name": "takım",
       "slug": "takım",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 12,
       "name": "body",
       "slug": "body",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 13,
       "name": "tulum",
       "slug": "tulum",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 14,
       "name": "kimono",
       "slug": "kimono",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 15,
       "name": "süveter",
       "slug": "süveter",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 16,
       "name": "pareo",
       "slug": "pareo",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 17,
       "name": "salopet",
       "slug": "salopet",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 18,
       "name": "panço",
       "slug": "panço",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 19,
       "name": "kaftan",
       "slug": "kaftan",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 20,
       "name": "perelin",
       "slug": "perelin",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 21,
       "name": "takım elbise",
       "slug": "takım elbise",
       "productCount": 20
-
     },
     {
       "id": 22,
       "name": "Pantolon",
       "slug": "pantolon",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "alt-giyim"
     },
     {
       "id": 23,
       "name": "Etek",
       "slug": "etek",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "alt-giyim"
     },
     {
       "id": 24,
       "name": "Gömlek",
       "slug": "gömlek",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "üst-giyim"
     },
     {
       "id": 25,
       "name": "Mont",
       "slug": "mont",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "dış-giyim"
     },
     {
       "id": 26,
       "name": "Gözlük",
       "slug": "gözlük",
-      "productCount": 20
-
+      "productCount": 20,
+      "groupname": "aksesuar"
     },
     {
       "id": 27,
       "name": "Çanta",
       "slug": "çanta",
-      "productCount": 20
+      "productCount": 20,
+      "groupname": "aksesuar"
     },
+    
     {
       "id": 28,
+      "name": "Cüzdan",
+      "slug": "cüzdan",
+      "productCount": 20,
+      "groupname": "aksesuar"
+    },
+    {
+      "id": 29,
       "name": "Ayakkabı",
       "slug": "ayakkabı",
-      "productCount": 20
+      "productCount": 20,
+      "groupname": "Ayakkabı"
+    },
+
+    {
+      "id": 30,
+      "name": "Yüzük",
+      "slug": "yüzük",
+      "productCount": 20,
+      "groupname": "mücevher"
+    },
+    {
+      "id": 31,
+      "name": "Küpe",
+      "slug": "küpe",
+      "productCount": 20,
+      "groupname": "mücevher"
+    },
+    
+    {
+      "id": 32,
+      "name": "Kemer",
+      "slug": "kemer",
+      "productCount": 20,
+      "groupname": "aksesuar"
+    },
+    {
+      "id": 33,
+      "name": "Eşarp",
+      "slug": "eşarp",
+      "productCount": 20,
+      "groupname": "aksesuar"
+    }
+    ,
+    {
+      "id": 34,
+      "name": "Saat",
+      "slug": "saat",
+      "productCount": 20,
+      "groupname": "aksesuar"
+    }
+    ,
+    {
+      "id": 35,
+      "name": "Bileklik",
+      "slug": "bileklik",
+      "productCount": 20,
+      "groupname": "aksesuar"
+    }
+    ,
+    {
+      "id": 36,
+      "name": "Topuklu Ayakkabı",
+      "slug": "topuklu",
+      "productCount": 20,
+      "groupname": "ayakkabı"
+    },
+    
+    {
+      "id": 37,
+      "name": "Bot",
+      "slug": "bot",
+      "productCount": 20,
+      "groupname": "ayakkabı"
+    },
+    {
+      "id": 38,
+      "name": "Sandalet",
+      "slug": "sandalet",
+      "productCount": 20,
+      "groupname": "ayakkabı"
+    },
+    {
+      "id": 39,
+      "name": "Terlik",
+      "slug": "terlik",
+      "productCount": 20,
+      "groupname": "ayakkabı"
+    }
+    ,
+    {
+      "id": 40,
+      "name": "Eşofman",
+      "slug": "eşofman",
+      "productCount": 20,
+      "groupname": "alt-giyim"
+    },
+    
+    {
+      "id": 41,
+      "name": "Jogger",
+      "slug": "jogger",
+      "productCount": 20,
+      "groupname": "alt-giyim"
+    },
+    {
+      "id": 42,
+      "name": "Ceket",
+      "slug": "ceket",
+      "productCount": 20,
+      "groupname": "dış-giyim"
+    },
+    {
+      "id": 43,
+      "name": "Blazer",
+      "slug": "blazer",
+      "productCount": 20,
+      "groupname": "dış-giyim"
+    },
+    {
+      "id": 44,
+      "name": "Kaban",
+      "slug": "kaban",
+      "productCount": 20,
+      "groupname": "dış-giyim"
+    }
+    ,
+    {
+      "id": 45,
+      "name": "Yelek",
+      "slug": "yelek",
+      "productCount": 20,
+      "groupname": "dış-giyim"
+    }
+    ,
+    {
+      "id": 46,
+      "name": "Trençkot",
+      "slug": "trençkot",
+      "productCount": 20,
+      "groupname": "dış-giyim"
+    },
+    
+    {
+      "id": 46,
+      "name": "Yağmurluk",
+      "slug": "yağmurluk",
+      "productCount": 20,
+      "groupname": "dış-giyim"
+    }
+    ,
+    
+    {
+      "id": 47,
+      "name": "Şort",
+      "slug": "şort",
+      "productCount": 20,
+      "groupname": "alt-giyim"
+    }
+    ,
+    
+    {
+      "id": 48,
+      "name": "Bermuda",
+      "slug": "bermuda",
+      "productCount": 20,
+      "groupname": "alt-giyim"
+    }
+    ,
+    
+    {
+      "id": 49,
+      "name": "Tayt",
+      "slug": "tayt",
+      "productCount": 20,
+      "groupname": "alt-giyim"
+    }
+    ,
+    
+    {
+      "id": 50,
+      "name": "Çizme",
+      "slug": "çizme",
+      "productCount": 20,
+      "groupname": "ayakkabı"
     }
   ]
 }
