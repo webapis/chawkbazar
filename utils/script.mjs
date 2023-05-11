@@ -13,7 +13,7 @@ const prisma = new PrismaClient()
 
 
 let filePaths = []
-await prisma.products.deleteMany({})
+//await prisma.products.deleteMany({})
 debugger
 walkSync(path.join(process.cwd(), `erkek/unzipped-data`), async (filepath) => {
   filePaths.push(filepath)
@@ -56,7 +56,7 @@ while (!isComplete) {
       const navs = genegateNavigation({ title: l.title })
       // const ft = l.priceNew.replace('TL', '').replace('$', '').replaceAll('.','').replaceAll(',','').trim()
       // const red =formatNumber(ft, {precision:1})
-      debugger
+   
       listwithNav.push({ ...l, ...navs })
     }
 
@@ -93,8 +93,20 @@ debugger
 async function main({ data }) {
 
   try {
+    for(let d of data ){
+      debugger
+      const user = await prisma.products.upsert({
+        where: { 
+          imageUrl },
+        update: d,
+        create: d,
+      })
+      debugger
+    }
 
-    const user = await prisma.products.createMany({ data })
+    // const user = await prisma.products.createMany({ data })
+  
+
     await prisma.$disconnect()
   } catch (error) {
     console.error(error, data)
