@@ -78,7 +78,7 @@
     },
     {
       "id": 8,
-      "name": "kazak",
+      "name": "Kazak",
       "slug": "kazak",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -90,7 +90,7 @@
     },
     {
       "id": 9,
-      "name": "hırka",
+      "name": "Hırka",
       "slug": "hırka",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -102,7 +102,7 @@
     },
     {
       "id": 10,
-      "name": "büstyer",
+      "name": "Büstyer",
       "slug": "büstyer",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -112,7 +112,7 @@
     },
     {
       "id": 11,
-      "name": "takım",
+      "name": "Takım",
       "slug": "takım",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -124,7 +124,7 @@
     },
     {
       "id": 12,
-      "name": "body",
+      "name": "Body",
       "slug": "body",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -136,7 +136,7 @@
     },
     {
       "id": 13,
-      "name": "tulum",
+      "name": "Tulum",  
       "slug": "tulum",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -148,7 +148,7 @@
     },
     {
       "id": 14,
-      "name": "kimono",
+      "name": "Kimono",
       "slug": "kimono",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -160,7 +160,7 @@
     },
     {
       "id": 15,
-      "name": "süveter",
+      "name": "Süveter",
       "slug": "süveter",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -172,7 +172,7 @@
     },
     {
       "id": 16,
-      "name": "pareo",
+      "name": "Pareo",
       "slug": "pareo",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -184,7 +184,7 @@
     },
     {
       "id": 17,
-      "name": "salopet",
+      "name": "Salopet",
       "slug": "salopet",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -196,7 +196,7 @@
     },
     {
       "id": 18,
-      "name": "panço",
+      "name": "Panço",
       "slug": "panço",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -208,7 +208,7 @@
     },
     {
       "id": 19,
-      "name": "kaftan",
+      "name": "Kaftan",
       "slug": "kaftan",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -220,7 +220,7 @@
     },
     {
       "id": 20,
-      "name": "perelin",
+      "name": "Perelin",
       "slug": "perelin",
       "productCount": 20,
       "groupname": "üst-giyim",
@@ -232,7 +232,7 @@
     },
     {
       "id": 21,
-      "name": "takım elbise",
+      "name": "Takım Elbise",
       "slug": "takım elbise",
       "productCount": 20,
       "gender": [

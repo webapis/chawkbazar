@@ -11,12 +11,17 @@ export const UrunFilter = () => {
 	const { data, isLoading } = useKategorilerQuery({
 		limit: 10,
 	});
+	const selectedGenders = query?.g
+		? (query.g as string).split(",")
+		: [];
 	const selectedCategories = query?.k
 		? (query.k as string).split(",")
 		: [];
 	const [formState, setFormState] = React.useState<string[]>(
 		selectedCategories
 	);
+	const [genders, setGenders] = React.useState<string[]>(selectedGenders)
+	console.log('selectedGenders', selectedGenders)
 	const [filteredState, setFilteredState] = React.useState<string>('');
 	React.useEffect(() => {
 		setFormState(selectedCategories);
@@ -25,7 +30,12 @@ export const UrunFilter = () => {
 		console.log('filteredState', filteredState)
 	}, [filteredState]);
 
+	React.useEffect(() => {
 
+		setGenders(selectedGenders)
+
+
+	}, [query?.g]);
 	function handleFilter(e: React.FormEvent<HTMLInputElement>): void {
 		setFilteredState(e.currentTarget.value)
 	}
@@ -38,10 +48,10 @@ export const UrunFilter = () => {
 			: [...formState, value];
 		const { k, ...restQuery } = query;
 
-		let nextRouteState =	{
+		let nextRouteState = {
 			pathname,
 			query: {
-				...restQuery,q:undefined,
+				...restQuery, q: undefined,
 				...(!!currentFormState.length
 					? { k: currentFormState.join(",") }
 					: {}),
@@ -55,12 +65,15 @@ export const UrunFilter = () => {
 		);
 	}
 	const items = data?.kategoriler.data;
+	const filtered = items.filter(item => genders.some(s => item.gender.find(d => d === s)))
+	console.log('filtered', filtered)
 	return (
 		<div className="block border-b border-gray-300 pb-7 mb-7">
 			<h3 className="text-heading text-sm md:text-base font-semibold mb-7">
 				{t("text-category")}
 			</h3>
-			<input type="search" onChange={handleFilter} placeholder="Ürün kategori ara..." style={{ width:'100%',
+			<input type="search" onChange={handleFilter} placeholder="Ürün kategori ara..." style={{
+				width: '100%',
 				fontFamily: 'Open Sans, sans-serif',
 				fontSize: 14,
 				fontWeight: 400,
@@ -70,7 +83,7 @@ export const UrunFilter = () => {
 				border: '1px solid #555'
 			}} />
 			<div className="mt-2 flex flex-col space-y-4" style={{ height: 400, overflow: 'auto' }}>
-				{items?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
+				{filtered?.length === 0 && items?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
 					var textA = a.name.toUpperCase();
 					var textB = b.name.toUpperCase();
 					return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
@@ -81,7 +94,22 @@ export const UrunFilter = () => {
 						name={item.name.toLowerCase()}
 						checked={formState.includes(item.slug)}
 						value={item.slug}
-						
+
+						onChange={handleItemClick}
+					/>
+				))}
+				{filtered?.length > 0 && filtered?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
+					var textA = a.name.toUpperCase();
+					var textB = b.name.toUpperCase();
+					return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+				}).map((item: any) => (
+					<CheckBox
+						key={item.id}
+						label={item.name}
+						name={item.name.toLowerCase()}
+						checked={formState.includes(item.slug)}
+						value={item.slug}
+
 						onChange={handleItemClick}
 					/>
 				))}
