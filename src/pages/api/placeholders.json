@@ -476,7 +476,7 @@
         },
         "imagePrefix": "https://ik.imagekit.io/mumrjdehaou/",
         "placeholder": "./placeholder-img/placeholder.jpg",
-        "imageHost": "https://cdn.olegcassini.com.tr/",
+        "imageHost": "https://www.olegcassini.com.tr/",
         "detailHost": "https://www.olegcassini.com.tr/",
         "postfix": "",
         "imgPostFix": "?tr=w-400"
