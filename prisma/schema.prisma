@@ -17,7 +17,7 @@ model Products {
   index       Int
   priceNew    String?
   price       Decimal?
-  imageUrl    String?  @db.VarChar(300)
+  imageUrl    String  @db.VarChar(300)  @unique
   link        String?
   timestamp   String?
   marka       String?  @db.VarChar(50)
@@ -25,6 +25,7 @@ model Products {
   renk        String?  @db.VarChar(50)
   altKategori String?  @db.VarChar(50)
   kategori    String?  @db.VarChar(50)
+  modified    DateTime @default(now())
   // @@fulltext([title])
 
   @@index(fields: [gender])
