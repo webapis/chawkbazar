@@ -125,6 +125,7 @@ export const ColorFilter = () => {
 			undefined,
 			{ scroll: false }
 		);
+		window.scrollTo(0, 0);
 	}
 	const items = colorFilterItems;
 

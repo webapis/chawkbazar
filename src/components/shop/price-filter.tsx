@@ -73,6 +73,7 @@ export const PriceFilter = () => {
 			undefined,
 			{ scroll: false }
 		);
+		window.scrollTo(0, 0);
 	}
 	const items = priceFilterItems;
 

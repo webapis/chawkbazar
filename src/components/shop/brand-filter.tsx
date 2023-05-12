@@ -48,7 +48,7 @@ export const BrandFilter = () => {
 			undefined,
 			{ scroll: false }
 		);
-
+		window.scrollTo(0, 0);
 	}
 	const items = data?.brands;
 

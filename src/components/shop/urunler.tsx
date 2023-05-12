@@ -63,6 +63,7 @@ export const UrunFilter = () => {
 			undefined,
 			{ scroll: false }
 		);
+		window.scrollTo(0, 0);
 	}
 	const items = data?.kategoriler.data;
 	const filtered = genders && items?.filter(item => genders.some(s => item.gender?.find(d => d === s)))

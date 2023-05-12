@@ -122,12 +122,12 @@
             "width": "80",
             "height": "auto"
         },
-        "imagePrefix": "",
+        "imagePrefix": "https://ik.imagekit.io/mumrjdehaou/",
         "placeholder": "./placeholder-img/placeholder.jpg",
         "imageHost": "https://romancdn.sysrun.net/Content/ProductImage/Original/",
         "detailHost": "https://www.roman.com.tr/detay/",
         "postfix": "",
-        "imgPostFix": ""
+        "imgPostFix":  "?tr=w-400"
     },
     "beymen": {
         "logo": {
@@ -448,12 +448,12 @@
             "height": "auto"
         },
         "imagePrefix": "",
-        "imagePrefixImageKit": "",
+        "imagePrefixImageKit": "https://ik.imagekit.io/mumrjdehaou/",
         "placeholder": "./placeholder-img/placeholder.jpg",
         "imageHost": "https://cdn.sorsware.com/",
         "detailHost": "https://www.perspective.com.tr/",
         "postfix": "",
-        "imgPostFix": ""
+        "imgPostFix":  "?tr=w-400"
     },
     "mango": {
         "logo": {
@@ -819,12 +819,12 @@
             "width": "40%",
             "height": "auto"
         },
-        "imagePrefix": "",
+        "imagePrefix": "https://ik.imagekit.io/mumrjdehaou/",
         "placeholder": "./placeholder-img/placeholder.jpg",
         "imageHost": "https://cdn3.sorsware.com/",
         "detailHost": "https://www.bsl.com.tr/",
         "postfix": "",
-        "imgPostFix": ""
+        "imgPostFix":"?tr=w-400"
     },
     "nu": {
         "logo": {

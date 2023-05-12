@@ -7,12 +7,40 @@ import CookieBar from '@components/common/cookie-bar';
 import { useAcceptCookies } from '@utils/use-accept-cookies';
 import Button from '@components/ui/button';
 import { useTranslation } from 'next-i18next';
-
+import React from 'react';
+import { useRef } from "react";
 export default function Layout({ children }: React.PropsWithChildren<{}>) {
+	const buttonElement = useRef(null);
 	const { acceptedCookies, onAcceptCookies } = useAcceptCookies();
 	const { t } = useTranslation('common');
+	function scrollToTop() {
+		window.scrollTo(0, 0);
+	}
+
 	return (
 		<div className="flex flex-col min-h-screen">
+			<style>
+				{`			#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #5a5a5a;;
+  color:  white;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom:5px;
+  border-radius: 50px;
+  width:50px;
+
+
+}`}</style>
+			
 			<NextSeo
 				additionalMetaTags={[
 					{
@@ -53,6 +81,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
 				}}
 			>
 				{children}
+				<button ref={buttonElement} id="myBtn" onClick={scrollToTop} style={{ position: 'fixed', bottom: 100, right: 50 }}>&uarr;</button>
 			</main>
 			<Footer />
 			<MobileNavigation />
