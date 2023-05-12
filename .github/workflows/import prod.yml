@@ -8,7 +8,7 @@ env:
   MONGODB_URL: ${{secrets.MONGODB_URL}}
   DATABASE_URL: ${{secrets.DATABASE_URL}}
 jobs:
-  aggregator:
+  importjob:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,7 +16,7 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-          ref: main
+          ref: master
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
