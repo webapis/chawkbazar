@@ -102,7 +102,7 @@ export const siteSettings = {
       },
       {
         id: 3,
-        path: '/search?q=kadın-giyim',
+        path: '/search?g=kadın',
         label: 'menu-women-wear',
         columns: [
           {
@@ -390,7 +390,7 @@ export const siteSettings = {
       },
       {
         id: 2,
-        path: {en:'/search?q=men-wear',tr:'/search?q=erkek-giyim'},
+        path: {en:'/search?q=men-wear',tr:'/search?g=erkek'},
         label: 'menu-men-wear',
         columns: [
           {
