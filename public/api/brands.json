@@ -349,20 +349,7 @@
         "erkek-çocuk"
       ]
     },
-    {
-      "id": 25,
-      "name": "Network",
-      "slug": "network",
-      "image": {
-        "id": 1,
-        "thumbnail": "/assets/images/brands/fashadil.png",
-        "original": "/assets/images/brands/fashadil.png"
-      },
-      "gender": [
-        "kadın",
-        "erkek"
-      ]
-    },
+
     {
       "id": 26,
       "name": "Patirti",
