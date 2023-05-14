@@ -40,7 +40,7 @@ while (!isComplete) {
   for (let filepath of filePaths) {
 
     const raw = fs.readFileSync(filepath, { encoding: 'utf-8' })
-    const data = JSON.parse(raw).map(m => { return { ...m, modified: new Date(), priceNew: m.priceNew ? m.priceNew.toString() : m.priceNew, timestamp: m.timestamp.toString(), price: m.priceNew ? mapPrice(m.priceNew.toString()) : 0 } }).slice(sliceCounter, sliceCounter + 20)
+    const data = JSON.parse(raw).map(m => { return { ...m, modified: new Date(), priceNew: m.priceNew ? m.priceNew.toString() : m.priceNew, timestamp: m.timestamp, price: m.priceNew ? mapPrice(m.priceNew.toString()) : 0 } }).slice(sliceCounter, sliceCounter + 20)
     const removeImgNull = data.filter(m => m.imageUrl !== null)
     const imageUrlWithNull = data.filter(m => m.imageUrl === null)
     if (imageUrlWithNull.length > 0) {
