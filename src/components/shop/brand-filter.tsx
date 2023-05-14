@@ -11,12 +11,24 @@ export const BrandFilter = () => {
 	const { data, isLoading, error } = useBrandsQuery({
 		limit: 10,
 	});
+	const selectedGenders = query?.g
+	? (query.g as string).split(",")
+	: [];
 	const selectedBrands = query?.brand ? (query.brand as string).split(",") : [];
 	const [formState, setFormState] = React.useState<string[]>(selectedBrands);
 	const [filteredState, setFilteredState] = React.useState<string>('');
+	const [genders, setGenders] = React.useState<string[]>(selectedGenders)
+	console.log('selectedGenders', selectedGenders)
 	React.useEffect(() => {
 		setFormState(selectedBrands);
 	}, [query?.brand]);
+
+	React.useEffect(() => {
+
+		setGenders(selectedGenders)
+
+
+	}, [query?.g,data?.brands]);
 	React.useEffect(() => {
 		console.log('filteredState', filteredState)
 	}, [filteredState]);
@@ -51,7 +63,8 @@ export const BrandFilter = () => {
 		window.scrollTo(0, 0);
 	}
 	const items = data?.brands;
-
+	const filtered = genders && items?.filter(item => genders.some(s => item.gender?.find(d => d === s)))
+	console.log('filtered', filtered)
 	return (
 		<div className="block border-b border-gray-300 pb-7 mb-7">
 			<style>
@@ -89,7 +102,21 @@ export const BrandFilter = () => {
 			}} />
 			<div className="mt-2 flex flex-col space-y-4" style={{ height: 400, overflow: 'auto' }}>
 
-				{items?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
+				{filtered&&filtered?.length === 0 && items?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
+					var textA = a.name.toUpperCase();
+					var textB = b.name.toUpperCase();
+					return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+				}).map((item: any) => (
+					<CheckBox
+						key={item.id}
+						label={item.name.toUpperCase()}
+						name={item.name.toUpperCase()}
+						checked={formState.includes(item.slug)}
+						value={item.slug}
+						onChange={handleItemClick}
+					/>
+				))}
+					{filtered&&filtered?.length > 0 && filtered?.filter(f => f.name.toLowerCase().includes(filteredState.toLocaleLowerCase())).sort((a, b) => {
 					var textA = a.name.toUpperCase();
 					var textB = b.name.toUpperCase();
 					return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;

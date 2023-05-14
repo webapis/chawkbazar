@@ -121,6 +121,7 @@ export type Brand = {
   id: number | string;
   name: string;
   slug: string;
+  gender:string[];
   image?: Attachment;
   background_image?: any;
   [key: string]: unknown;

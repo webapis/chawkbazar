@@ -6,15 +6,15 @@ import fs from 'fs'
 import path from 'path'
 import walkSync from './walkSync.mjs'
 import orderData from './orderData.mjs'
-import { formatMoney, unformat } from 'accounting-js'
-const rzt = parseFloat('1399').toFixed(2)
+
+
 
 const prisma = new PrismaClient()
 
 
 let filePaths = []
 debugger
-const deleted =await prisma.products.deleteMany({ where: { imageUrl: {contains:'kadin-kurklu-suet-pem-kadin-gri-kurklu-5109d7.jpeg'} } })
+const deleted = await prisma.products.deleteMany({ where: { imageUrl: { contains: 'kadin-kurklu-suet-pem-kadin-gri-kurklu-5109d7.jpeg' } } })
 
 debugger
 walkSync(path.join(process.cwd(), `erkek/unzipped-data`), async (filepath) => {
@@ -31,26 +31,7 @@ walkSync(path.join(process.cwd(), `erkek-cocuk/unzipped-data`), async (filepath)
   filePaths.push(filepath)
 })
 
-// const data = [{
-//   "title": "abiyefon gümüş simli gece çantası sh806 _kadin",
-//   "priceNew": "77.9",
-//   "imageUrl": "images/image/289/22712/113557762_0.jpg",
-//   "link": "gumus-simli-gece-cantasi-sh806",
-//   "timestamp": "1683692507642",
-//   "marka": "abiyefon",
-//   "gender": "_kadin",
-//   "modified": 1683692507642
-// },
-// {
-//   "title": "abiyefon beyaz simli gece çantası sh806 _kadin",
-//   "priceNew": "99.9",
-//   "imageUrl": "images/image/289/22712/113557758_0.jpg",
-//   "link": "beyaz-simli-gece-cantasi-sh806",
-//   "timestamp": "1683866882898",
-//   "marka": "abiyefon",
-//   "gender": "_kadin",
-//   "modified": 1683866882898
-// }].map(m => { return { ...m, modified: new Date(m.modified) } })
+
 let list = []
 let sliceCounter = 0
 let isComplete = false
@@ -78,8 +59,7 @@ while (!isComplete) {
     for (let l of list) {
 
       const navs = genegateNavigation({ title: l.title })
-      // const ft = l.priceNew.replace('TL', '').replace('$', '').replaceAll('.','').replaceAll(',','').trim()
-      // const red =formatNumber(ft, {precision:1})
+
 
       listwithNav.push({ ...l, ...navs })
     }
@@ -103,8 +83,8 @@ while (!isComplete) {
   } else {
     debugger
     isComplete = true
-    const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
-    console.log('deleteResult', deleteResult)
+    // const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
+    // console.log('deleteResult', deleteResult)
   }
 
 
@@ -121,14 +101,25 @@ async function main({ data }) {
   try {
     for (let d of data) {
       debugger
+      if (d.update) {
+        const user = await prisma.products.upsert({
+          where: {
+            imageUrl: d.imageUrl
+          },
+          update: d,
+          create: d,
+        })
 
-      const user = await prisma.products.upsert({
-        where: {
-          imageUrl: d.imageUrl
-        },
-        update: d,
-        create: d,
-      })
+        console.log('updated',user)
+      } else if (d.delete) {
+        const user = await prisma.products.delete({
+          where: {
+            imageUrl: d.imageUrl
+          }
+        })
+        console.log('deleted',user)
+      }
+
       debugger
     }
 

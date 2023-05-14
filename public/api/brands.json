@@ -8,7 +8,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/shovia.png",
         "original": "/assets/images/brands/shovia.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 2,
@@ -18,7 +24,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fusion.png",
         "original": "/assets/images/brands/fusion.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 3,
@@ -28,7 +40,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/hunter-shoes.png",
         "original": "/assets/images/brands/hunter-shoes.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 4,
@@ -38,7 +56,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/club-shoes.png",
         "original": "/assets/images/brands/club-shoes.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 5,
@@ -48,7 +72,10 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/hoppister.png",
         "original": "/assets/images/brands/hoppister.png"
-      }
+      },
+      "gender": [
+        "kadın,çocuk"
+      ]
     },
     {
       "id": 6,
@@ -58,7 +85,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/blaze-fashion.png",
         "original": "/assets/images/brands/blaze-fashion.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 7,
@@ -68,7 +101,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/elegance.png",
         "original": "/assets/images/brands/elegance.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 8,
@@ -78,7 +117,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 9,
@@ -88,7 +133,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 10,
@@ -98,7 +149,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,çocuk",
+        "erkek"
+      ]
     },
     {
       "id": 11,
@@ -108,7 +163,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,",
+        "erkek",
+        "erkek-çocuk"
+      ]
     },
     {
       "id": 12,
@@ -118,7 +178,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,",
+        "erkek"
+      ]
     },
     {
       "id": 13,
@@ -128,7 +192,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,",
+        "erkek"
+      ]
     },
     {
       "id": 14,
@@ -138,7 +206,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,",
+        "erkek"
+      ]
     },
     {
       "id": 15,
@@ -148,7 +220,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,",
+        "erkek"
+      ]
     },
     {
       "id": 16,
@@ -158,7 +234,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın,",
+        "erkek"
+      ]
     },
     {
       "id": 17,
@@ -168,7 +248,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
     },
     {
       "id": 18,
@@ -179,8 +263,7 @@
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
       }
-    }
-    ,
+    },
     {
       "id": 19,
       "name": "Desa",
@@ -189,9 +272,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 20,
       "name": "İkbalderi",
@@ -200,9 +286,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 21,
       "name": "Levis",
@@ -211,9 +300,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 22,
       "name": "Markapia",
@@ -222,9 +314,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 23,
       "name": "Matras",
@@ -233,9 +328,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 24,
       "name": "Mavi jeans",
@@ -244,9 +341,14 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
+    },
     {
       "id": 25,
       "name": "Network",
@@ -255,9 +357,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 26,
       "name": "Patirti",
@@ -266,9 +371,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 27,
       "name": "Pierrecardin",
@@ -277,9 +384,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 28,
       "name": "Sarar",
@@ -288,9 +398,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 29,
       "name": "Tergan",
@@ -299,9 +412,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 30,
       "name": "Vakko",
@@ -310,9 +426,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 31,
       "name": "Wcollection",
@@ -321,9 +440,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 32,
       "name": "Wrangler",
@@ -332,9 +454,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 33,
       "name": "Xint",
@@ -343,9 +468,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "erkek"
+      ]
+    },
     {
       "id": 34,
       "name": "Zara",
@@ -354,9 +482,14 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
+    },
     {
       "id": 35,
       "name": "Nu",
@@ -365,9 +498,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk"
+      ]
+    },
     {
       "id": 36,
       "name": "Avva",
@@ -376,9 +512,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+
+        "erkek"
+    
+      ]
+    },
     {
       "id": 37,
       "name": "Centone",
@@ -387,9 +527,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+
+        "erkek"
+      ]
+    },
     {
       "id": 38,
       "name": "Kigili",
@@ -398,9 +541,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+  
+        "erkek"
+      
+      ]
+    },
     {
       "id": 39,
       "name": "Slatra",
@@ -409,9 +556,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+  
+        "erkek"
+ 
+      ]
+    },
     {
       "id": 40,
       "name": "Valiberta",
@@ -420,9 +571,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+   
+        "erkek"
+       
+      ]
+    },
     {
       "id": 41,
       "name": "Addax",
@@ -431,9 +586,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+    
+      ]
+    },
     {
       "id": 42,
       "name": "Abiyefon",
@@ -442,9 +600,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 43,
       "name": "Adl",
@@ -453,9 +613,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 44,
       "name": "Baqa",
@@ -464,9 +626,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 45,
       "name": "Bsl",
@@ -475,9 +639,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 46,
       "name": "Dilvin",
@@ -486,9 +652,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 47,
       "name": "Exquise",
@@ -497,9 +665,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+   
+      ]
+    },
     {
       "id": 48,
       "name": "Gizia",
@@ -508,9 +679,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 49,
       "name": "İpekyol",
@@ -519,9 +692,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 50,
       "name": "Lacht",
@@ -530,9 +705,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 51,
       "name": "Lovemybody",
@@ -541,9 +718,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 52,
       "name": "Machka",
@@ -552,9 +731,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 53,
       "name": "Mango",
@@ -563,9 +744,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 54,
       "name": "Miostil",
@@ -574,9 +757,12 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+     
+      ]
+    },
     {
       "id": 55,
       "name": "Olegcassini",
@@ -585,8 +771,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }  ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 56,
       "name": "Oxxo",
@@ -595,9 +784,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 57,
       "name": "Perspective",
@@ -606,9 +797,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 58,
       "name": "Quzu",
@@ -617,9 +810,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 59,
       "name": "Roman",
@@ -628,9 +823,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 60,
       "name": "Saygigiyim",
@@ -639,9 +836,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 61,
       "name": "Tiffanytomato",
@@ -650,9 +849,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 62,
       "name": "twist",
@@ -661,9 +862,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 63,
       "name": "Vitrin",
@@ -672,9 +875,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }
-    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 64,
       "name": "Yargici",
@@ -683,8 +888,11 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
-    }    ,
+      },
+      "gender": [
+        "kadın"
+      ]
+    },
     {
       "id": 65,
       "name": "H&M",
@@ -693,7 +901,13 @@
         "id": 1,
         "thumbnail": "/assets/images/brands/fashadil.png",
         "original": "/assets/images/brands/fashadil.png"
-      }
+      },
+      "gender": [
+        "kadın",
+        "kız-çocuk",
+        "erkek",
+        "erkek-çocuk"
+      ]
     }
   ],
   "brandsGrid": [
