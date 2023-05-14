@@ -82,7 +82,7 @@ while (!isComplete) {
     debugger
     isComplete = true
     const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
-    console.log('deletedResult',deleteResult)
+    console.log('deletedResult', deleteResult)
   }
 
 
@@ -117,22 +117,22 @@ async function main({ data }) {
               imageUrl: d.imageUrl
             }
           })
-          console.log('deleted',d.link)
+          console.log('deleted', d.link)
         } catch (error) {
           console.log('no raw existed in db')
         }
-  
+
       } else {
         delete d.delete
         delete d.update
         debugger
-        const user = await prisma.products.upsert({
+        const user = await prisma.products.update({
           where: {
             imageUrl: d.imageUrl
           },
-          update: {modified: new Date()},
+          data: { modified: new Date() },
         })
-      
+
       }
 
       debugger
