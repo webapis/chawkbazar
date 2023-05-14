@@ -115,7 +115,7 @@ async function main({ data }) {
             imageUrl: d.imageUrl
           }
         })
-        console.log('deleted')
+        console.log('deleted',d.link)
       } else {
         delete d.delete
         delete d.update

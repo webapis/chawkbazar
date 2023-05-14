@@ -39,13 +39,13 @@ jobs:
         run: node utils/downloadData.mjs
       - name: import Data
         run: node utils/script.mjs
-      - name: Commit report
-        run: |
-          git config --global user.name 'Serdar Ashirov'
-          git config --global user.email 'webapis@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
-          git add .
-          git commit -m "Automated report."
-          git push
-        env:
-          GH_TOKEN: ${{secrets.GH_TOKEN}}
+      # - name: Commit report
+      #   run: |
+      #     git config --global user.name 'Serdar Ashirov'
+      #     git config --global user.email 'webapis@users.noreply.github.com'
+      #     git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
+      #     git add .
+      #     git commit -m "Automated report."
+      #     git push
+      #   env:
+      #     GH_TOKEN: ${{secrets.GH_TOKEN}}
