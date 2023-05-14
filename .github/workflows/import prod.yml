@@ -4,7 +4,6 @@ on:
     inputs:
       marka:
         description: 'marka'
-        required: true
         type: string
 env:
   REPO: codergihub/fasion
