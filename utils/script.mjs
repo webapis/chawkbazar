@@ -126,6 +126,12 @@ async function main({ data }) {
         delete d.delete
         delete d.update
         debugger
+        const user = await prisma.products.upsert({
+          where: {
+            imageUrl: d.imageUrl
+          },
+          update: {modified: new Date()},
+        })
       }
 
       debugger
