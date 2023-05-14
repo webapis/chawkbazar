@@ -94,7 +94,7 @@ const ProductCard: FC<ProductProps> = ({
 
  
   }, [imageEl.current,product]);
-  console.log('product', product)
+
   function handlePopupView() {
     // setModalData({ data: product });
     // setModalView("PRODUCT_VIEW");

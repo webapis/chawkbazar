@@ -31,6 +31,7 @@ export default async function handler(req, res) {
     return
   }
   const page = req.query.page
+  console.log('page-----', page)
   console.log('req.query', req.query)
   const q = queries[req.query.q]
 
@@ -49,12 +50,12 @@ export default async function handler(req, res) {
 
           katQueries.push(k.slug)
         }
-        if(req.query[query].indexOf(k.groupname)!==-1 ){
+        if (req.query[query].indexOf(k.groupname) !== -1) {
           katQueries.push(k.slug)
         }
-   
+
       }
-     
+
       const altKats = []
       for (let k of altKategoriler.data) {
         if (otherQ.find(f => f === k.slug)) {
@@ -69,7 +70,10 @@ export default async function handler(req, res) {
     }
 
     if (query === 'brand') {
-      newquery.where.marka = { in: req.query[query].split(',') }
+      newquery.where.marka = { in: req.query[query].split(',').map(m => m.trim()) }
+      //  newquery.where.marka = { search: req.query[query].split(',').map(m=>m.trim()).join('|') }
+      console.log('***', req.query[query].split(',').map(m => m.trim()).join('|'))
+
     }
     else if (query === 'g') {
 
@@ -113,13 +117,13 @@ export default async function handler(req, res) {
   if (req.method === 'GET') {
     try {
       debugger
-      // const aggregations = await prisma.products.aggregate({
-      //   _count: {
-      //     index: true,
-      //   },
-      //   ...newquery
-      // })
-
+      const aggregations = await prisma.products.aggregate({
+        _count: {
+          index: true,
+        },
+        ...newquery
+      })
+      console.log('aggregations', aggregations)
       debugger
       const data = await prisma.products.findMany({
 
@@ -128,7 +132,7 @@ export default async function handler(req, res) {
         //     index: 'asc',
         //   }
         // ],
-        skip: page === 1 ? 0 : 100 * page,
+        skip: page === '1'  ? 0 : parseInt(100) * page,
         take: 100,
         ...newquery
       });
@@ -260,7 +264,7 @@ export default async function handler(req, res) {
         }
       })
       debugger
-      return res.status(200).json({ data: mappedData, count: 0 });
+      return res.status(200).json({ data: mappedData, count: aggregations._count.index });
     } catch (err) {
       console.error(err);
       return res.status(500).json({ msg: 'Something went wrong' });
