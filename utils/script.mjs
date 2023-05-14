@@ -106,7 +106,7 @@ async function main({ data }) {
           create: d,
         })
 
-        console.log('updated', user)
+        console.log('updated')
       } else if (d.delete) {
         delete d.delete
         delete d.update
@@ -115,7 +115,7 @@ async function main({ data }) {
             imageUrl: d.imageUrl
           }
         })
-        console.log('deleted', user)
+        console.log('deleted')
       } else {
         delete d.delete
         delete d.update
