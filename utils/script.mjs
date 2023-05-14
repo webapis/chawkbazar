@@ -81,7 +81,8 @@ while (!isComplete) {
   } else {
     debugger
     isComplete = true
-
+    const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
+    console.log('deletedResult',deleteResult)
   }
 
 
