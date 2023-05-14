@@ -14,9 +14,7 @@ const prisma = new PrismaClient()
 
 let filePaths = []
 debugger
-const deleted = await prisma.products.deleteMany({ where: { imageUrl: { contains: 'kadin-kurklu-suet-pem-kadin-gri-kurklu-5109d7.jpeg' } } })
 
-debugger
 walkSync(path.join(process.cwd(), `erkek/unzipped-data`), async (filepath) => {
   filePaths.push(filepath)
 })
@@ -83,18 +81,14 @@ while (!isComplete) {
   } else {
     debugger
     isComplete = true
-    // const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
-    // console.log('deleteResult', deleteResult)
+
   }
 
 
 }
 
 
-debugger
 
-
-debugger
 
 async function main({ data }) {
 
