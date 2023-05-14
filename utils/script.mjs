@@ -7,10 +7,14 @@ import path from 'path'
 import walkSync from './walkSync.mjs'
 import orderData from './orderData.mjs'
 
-console.log('process.env.marka------',process.env.marka===true)
+console.log('process.env.marka------', process.env.marka === true)
 
 const prisma = new PrismaClient()
+if (process.env.marka) {
 
+  const deleteResult = await prisma.products.deleteMany({ where: { marka: { contains: process.env.marka } } })
+  console.log('deletedResult', deleteResult)
+}
 
 let filePaths = []
 debugger
@@ -82,7 +86,8 @@ while (!isComplete) {
     debugger
     isComplete = true
     // const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
-    console.log('deletedResult', deleteResult)
+
+
   }
 
 

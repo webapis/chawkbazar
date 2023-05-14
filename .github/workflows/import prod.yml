@@ -40,8 +40,8 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: 'npm install --legacy-peer-deps'
-      # - name: downloadData
-      #   run: node utils/downloadData.mjs
+      - name: downloadData
+        run: node utils/downloadData.mjs
       - name: import Data
         run: node utils/script.mjs
           
