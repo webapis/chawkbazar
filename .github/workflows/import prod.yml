@@ -1,12 +1,18 @@
 name: import-prod
 on:
    workflow_dispatch:
+    inputs:
+      marka:
+        description: 'marka'
+        required: true
+        type: string
 env:
   REPO: codergihub/fasion
   GH_TOKEN: ${{secrets.GH_TOKEN}}
   GH_TOKEN_2: ${{secrets.GH_TOKEN_2}}
   MONGODB_URL: ${{secrets.MONGODB_URL}}
   DATABASE_URL: ${{secrets.DATABASE_URL}}
+  marka: ${{inputs.marka}}
 jobs:
   importjob:
     runs-on: ubuntu-latest
@@ -35,10 +41,11 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: 'npm install --legacy-peer-deps'
-      - name: downloadData
-        run: node utils/downloadData.mjs
+      # - name: downloadData
+      #   run: node utils/downloadData.mjs
       - name: import Data
         run: node utils/script.mjs
+          
       # - name: Commit report
       #   run: |
       #     git config --global user.name 'Serdar Ashirov'

@@ -7,7 +7,7 @@ import path from 'path'
 import walkSync from './walkSync.mjs'
 import orderData from './orderData.mjs'
 
-
+console.log('process.env.marka------',process.env.marka)
 
 const prisma = new PrismaClient()
 
@@ -81,7 +81,7 @@ while (!isComplete) {
   } else {
     debugger
     isComplete = true
-    const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
+    // const deleteResult = await prisma.products.deleteMany({ where: { modified: { lt: new Date(new Date().setHours(0, 0, 0, 0)) } } })
     console.log('deletedResult', deleteResult)
   }
 
@@ -126,12 +126,12 @@ async function main({ data }) {
         delete d.delete
         delete d.update
         debugger
-        const user = await prisma.products.update({
-          where: {
-            imageUrl: d.imageUrl
-          },
-          data: { modified: new Date() },
-        })
+        // const user = await prisma.products.update({
+        //   where: {
+        //     imageUrl: d.imageUrl
+        //   },
+        //   data: { modified: new Date() },
+        // })
 
       }
 
