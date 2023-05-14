@@ -7,7 +7,7 @@ import path from 'path'
 import walkSync from './walkSync.mjs'
 import orderData from './orderData.mjs'
 
-console.log('process.env.marka------',process.env.marka.split(','))
+console.log('process.env.marka------',process.env.marka)
 
 const prisma = new PrismaClient()
 
