@@ -101,7 +101,23 @@ async function main({ data }) {
   try {
     for (let d of data) {
       debugger
-      if (d.update) {
+      if (d.delete) {
+        try {
+          delete d.delete
+          delete d.update
+          delete d.deletedDate
+          const user = await prisma.products.delete({
+            where: {
+              imageUrl: d.imageUrl
+            }
+          })
+          console.log('deleted', d.marka, d.link)
+        } catch (error) {
+          console.log('no raw existed in db')
+        }
+
+      }
+      else if (d.update) {
         delete d.delete
         delete d.update
         delete d.deletedDate
@@ -114,22 +130,8 @@ async function main({ data }) {
         })
 
         console.log('updated')
-      } else if (d.delete) {
-        try {
-          delete d.delete
-          delete d.update
-          delete d.deletedDate
-          const user = await prisma.products.delete({
-            where: {
-              imageUrl: d.imageUrl
-            }
-          })
-          console.log('deleted',d.marka, d.link)
-        } catch (error) {
-          console.log('no raw existed in db')
-        }
-
-      } else {
+      }
+      else {
         delete d.delete
         delete d.update
         delete d.deletedDate
