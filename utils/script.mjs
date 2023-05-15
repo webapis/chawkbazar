@@ -122,7 +122,7 @@ async function main({ data }) {
               imageUrl: d.imageUrl
             }
           })
-          console.log('deleted', d.link)
+          console.log('deleted',d.marka, d.link)
         } catch (error) {
           console.log('no raw existed in db')
         }

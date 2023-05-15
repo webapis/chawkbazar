@@ -23,6 +23,7 @@ export default function Search() {
 		e.preventDefault();
 	}
 	function handleAutoSearch(e: React.FormEvent<HTMLInputElement>) {
+		console.log('search',e.currentTarget.value)
 		setSearchText(e.currentTarget.value);
 	}
 	function clear() {
