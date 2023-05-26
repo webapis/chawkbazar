@@ -120,7 +120,7 @@ async function main({ data }) {
       else if (d.update) {
         delete d.delete
         delete d.update
-        delete d.deletedDate
+       // delete d.deletedDate
         const user = await prisma.products.upsert({
           where: {
             imageUrl: d.imageUrl
@@ -132,9 +132,9 @@ async function main({ data }) {
         console.log('updated')
       }
       else {
-        delete d.delete
-        delete d.update
-        delete d.deletedDate
+      //  delete d.delete
+      //  delete d.update
+       // delete d.deletedDate
         debugger
         // const user = await prisma.products.update({
         //   where: {
